@@ -1,0 +1,198 @@
+\hypertarget{class_wintab_d_n_1_1_c_mem_utils}{
+\section{WintabDN::CMemUtils Class Reference}
+\label{class_wintab_d_n_1_1_c_mem_utils}\index{WintabDN::CMemUtils@{WintabDN::CMemUtils}}
+}
+
+
+Provide utility methods for unmanaged memory management.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static IntPtr \hyperlink{class_wintab_d_n_1_1_c_mem_utils_a9a94990f8c6f801fce835698b10b27f9}{AllocUnmanagedBuf} (Object val\_\-I)
+\begin{DoxyCompactList}\small\item\em Allocates a pointer to unmanaged heap memory of sizeof(val\_\-I). \item\end{DoxyCompactList}\item 
+static IntPtr \hyperlink{class_wintab_d_n_1_1_c_mem_utils_afe424c11a6c32d0802bdfdb7e6118fd3}{AllocUnmanagedBuf} (int size\_\-I)
+\begin{DoxyCompactList}\small\item\em Allocates a pointer to unmanaged heap memory of given size. \item\end{DoxyCompactList}\item 
+static T \hyperlink{class_wintab_d_n_1_1_c_mem_utils_a462ef67a6a4e5fa8fe59bf37dc8b4b53}{MarshalUnmanagedBuf$<$ T $>$} (IntPtr buf\_\-I, int size)
+\begin{DoxyCompactList}\small\item\em Marshals specified buf to the specified type. \item\end{DoxyCompactList}\item 
+static void \hyperlink{class_wintab_d_n_1_1_c_mem_utils_a6acc474d09da4fb75e82ecfacb6bf051}{FreeUnmanagedBuf} (IntPtr buf\_\-I)
+\begin{DoxyCompactList}\small\item\em Free unmanaged memory pointed to by buf\_\-I. \item\end{DoxyCompactList}\item 
+static string \hyperlink{class_wintab_d_n_1_1_c_mem_utils_a3b02b432d185777360f1501b42df7afa}{MarshalUnmanagedString} (IntPtr buf\_\-I, int size\_\-I)
+\begin{DoxyCompactList}\small\item\em Marshals a string from an unmanaged buffer. \item\end{DoxyCompactList}\item 
+static \hyperlink{struct_wintab_d_n_1_1_wintab_packet}{WintabPacket}\mbox{[}$\,$\mbox{]} \hyperlink{class_wintab_d_n_1_1_c_mem_utils_a04f7fa53ebe1453681b38ef4fab704bc}{MarshalDataPackets} (UInt32 numPkts\_\-I, IntPtr buf\_\-I)
+\begin{DoxyCompactList}\small\item\em Marshal unmanaged data packets into managed \hyperlink{struct_wintab_d_n_1_1_wintab_packet}{WintabPacket} data. \item\end{DoxyCompactList}\item 
+static \hyperlink{struct_wintab_d_n_1_1_wintab_packet_ext}{WintabPacketExt}\mbox{[}$\,$\mbox{]} \hyperlink{class_wintab_d_n_1_1_c_mem_utils_a204ffdb085e7ee90905c928110fe81d8}{MarshalDataExtPackets} (UInt32 numPkts\_\-I, IntPtr buf\_\-I)
+\begin{DoxyCompactList}\small\item\em Marshal unmanaged Extension data packets into managed \hyperlink{struct_wintab_d_n_1_1_wintab_packet_ext}{WintabPacketExt} data. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provide utility methods for unmanaged memory management. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_wintab_d_n_1_1_c_mem_utils_a9a94990f8c6f801fce835698b10b27f9}{
+\index{WintabDN::CMemUtils@{WintabDN::CMemUtils}!AllocUnmanagedBuf@{AllocUnmanagedBuf}}
+\index{AllocUnmanagedBuf@{AllocUnmanagedBuf}!WintabDN::CMemUtils@{WintabDN::CMemUtils}}
+\subsubsection[{AllocUnmanagedBuf}]{\setlength{\rightskip}{0pt plus 5cm}static IntPtr WintabDN::CMemUtils::AllocUnmanagedBuf (
+\begin{DoxyParamCaption}
+\item[{Object}]{ val\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_mem_utils_a9a94990f8c6f801fce835698b10b27f9}
+
+
+Allocates a pointer to unmanaged heap memory of sizeof(val\_\-I). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\_\-I} & managed object that determines bytes of unmanaged buf\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unmanaged buffer pointer.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_mem_utils_afe424c11a6c32d0802bdfdb7e6118fd3}{
+\index{WintabDN::CMemUtils@{WintabDN::CMemUtils}!AllocUnmanagedBuf@{AllocUnmanagedBuf}}
+\index{AllocUnmanagedBuf@{AllocUnmanagedBuf}!WintabDN::CMemUtils@{WintabDN::CMemUtils}}
+\subsubsection[{AllocUnmanagedBuf}]{\setlength{\rightskip}{0pt plus 5cm}static IntPtr WintabDN::CMemUtils::AllocUnmanagedBuf (
+\begin{DoxyParamCaption}
+\item[{int}]{ size\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_mem_utils_afe424c11a6c32d0802bdfdb7e6118fd3}
+
+
+Allocates a pointer to unmanaged heap memory of given size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\_\-I} & number of bytes to allocate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unmanaged buffer pointer.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_mem_utils_a6acc474d09da4fb75e82ecfacb6bf051}{
+\index{WintabDN::CMemUtils@{WintabDN::CMemUtils}!FreeUnmanagedBuf@{FreeUnmanagedBuf}}
+\index{FreeUnmanagedBuf@{FreeUnmanagedBuf}!WintabDN::CMemUtils@{WintabDN::CMemUtils}}
+\subsubsection[{FreeUnmanagedBuf}]{\setlength{\rightskip}{0pt plus 5cm}static void WintabDN::CMemUtils::FreeUnmanagedBuf (
+\begin{DoxyParamCaption}
+\item[{IntPtr}]{ buf\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_mem_utils_a6acc474d09da4fb75e82ecfacb6bf051}
+
+
+Free unmanaged memory pointed to by buf\_\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf\_\-I} & pointer to unmanaged heap memory\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_wintab_d_n_1_1_c_mem_utils_a204ffdb085e7ee90905c928110fe81d8}{
+\index{WintabDN::CMemUtils@{WintabDN::CMemUtils}!MarshalDataExtPackets@{MarshalDataExtPackets}}
+\index{MarshalDataExtPackets@{MarshalDataExtPackets}!WintabDN::CMemUtils@{WintabDN::CMemUtils}}
+\subsubsection[{MarshalDataExtPackets}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf WintabPacketExt} \mbox{[}$\,$\mbox{]} WintabDN::CMemUtils::MarshalDataExtPackets (
+\begin{DoxyParamCaption}
+\item[{UInt32}]{ numPkts\_\-I, }
+\item[{IntPtr}]{ buf\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_mem_utils_a204ffdb085e7ee90905c928110fe81d8}
+
+
+Marshal unmanaged Extension data packets into managed \hyperlink{struct_wintab_d_n_1_1_wintab_packet_ext}{WintabPacketExt} data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numPkts\_\-I} & number of packets to marshal\\
+\hline
+{\em buf\_\-I} & pointer to unmanaged heap memory containing data packets\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_mem_utils_a04f7fa53ebe1453681b38ef4fab704bc}{
+\index{WintabDN::CMemUtils@{WintabDN::CMemUtils}!MarshalDataPackets@{MarshalDataPackets}}
+\index{MarshalDataPackets@{MarshalDataPackets}!WintabDN::CMemUtils@{WintabDN::CMemUtils}}
+\subsubsection[{MarshalDataPackets}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf WintabPacket} \mbox{[}$\,$\mbox{]} WintabDN::CMemUtils::MarshalDataPackets (
+\begin{DoxyParamCaption}
+\item[{UInt32}]{ numPkts\_\-I, }
+\item[{IntPtr}]{ buf\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_mem_utils_a04f7fa53ebe1453681b38ef4fab704bc}
+
+
+Marshal unmanaged data packets into managed \hyperlink{struct_wintab_d_n_1_1_wintab_packet}{WintabPacket} data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numPkts\_\-I} & number of packets to marshal\\
+\hline
+{\em buf\_\-I} & pointer to unmanaged heap memory containing data packets\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_mem_utils_a462ef67a6a4e5fa8fe59bf37dc8b4b53}{
+\index{WintabDN::CMemUtils@{WintabDN::CMemUtils}!MarshalUnmanagedBuf$<$ T $>$@{MarshalUnmanagedBuf$<$ T $>$}}
+\index{MarshalUnmanagedBuf$<$ T $>$@{MarshalUnmanagedBuf$<$ T $>$}!WintabDN::CMemUtils@{WintabDN::CMemUtils}}
+\subsubsection[{MarshalUnmanagedBuf$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static T WintabDN::CMemUtils::MarshalUnmanagedBuf$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{IntPtr}]{ buf\_\-I, }
+\item[{int}]{ size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_mem_utils_a462ef67a6a4e5fa8fe59bf37dc8b4b53}
+
+
+Marshals specified buf to the specified type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & type to which buf\_\-I is marshalled\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em buf\_\-I} & unmanaged heap pointer\\
+\hline
+{\em size} & expected size of buf\_\-I\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Managed object of specified type.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_mem_utils_a3b02b432d185777360f1501b42df7afa}{
+\index{WintabDN::CMemUtils@{WintabDN::CMemUtils}!MarshalUnmanagedString@{MarshalUnmanagedString}}
+\index{MarshalUnmanagedString@{MarshalUnmanagedString}!WintabDN::CMemUtils@{WintabDN::CMemUtils}}
+\subsubsection[{MarshalUnmanagedString}]{\setlength{\rightskip}{0pt plus 5cm}static string WintabDN::CMemUtils::MarshalUnmanagedString (
+\begin{DoxyParamCaption}
+\item[{IntPtr}]{ buf\_\-I, }
+\item[{int}]{ size\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_mem_utils_a3b02b432d185777360f1501b42df7afa}
+
+
+Marshals a string from an unmanaged buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf\_\-I} & pointer to unmanaged heap memory\\
+\hline
+{\em size\_\-I} & size of ASCII string, includes null termination\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+WintabDN/CMemUtils.cs\end{DoxyCompactItemize}

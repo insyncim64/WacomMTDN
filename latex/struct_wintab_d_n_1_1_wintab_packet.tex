@@ -1,0 +1,177 @@
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet}{
+\section{WintabDN::WintabPacket Struct Reference}
+\label{struct_wintab_d_n_1_1_wintab_packet}\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+}
+
+
+Wintab data packet. Contains the \char`\"{}Full Monty\char`\"{} for all possible data values.  
+
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wintab_d_n_1_1_h_c_t_x}{HCTX} \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a8e32af4bfcc46357c69ac501b756ac38}{pkContext}
+\begin{DoxyCompactList}\small\item\em Specifies the context that generated the event. \item\end{DoxyCompactList}\item 
+UInt32 \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a2f16f395c9f61bd40038a1029ec62912}{pkStatus}
+\begin{DoxyCompactList}\small\item\em Specifies various status and error conditions. These conditions can be combined by using the bitwise OR opera-\/tor. The pkStatus field can be any any combination of the values defined in EWintabPacketStatusValue. \item\end{DoxyCompactList}\item 
+UInt32 \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a4e655a9a5378d55d47a3e275e4e68093}{pkTime}
+\begin{DoxyCompactList}\small\item\em In absolute mode, specifies the system time at which the event was posted. In relative mode, specifies the elapsed time in milliseconds since the last packet. \item\end{DoxyCompactList}\item 
+\hyperlink{class_wintab_d_n_1_1_w_t_p_k_t}{WTPKT} \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a5a6a3eaeed23e1898551cb42267a7167}{pkChanged}
+\begin{DoxyCompactList}\small\item\em Specifies which of the included packet data items have changed since the previously posted event. \item\end{DoxyCompactList}\item 
+UInt32 \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a10550807dd2a1cd432c2ff3c271bd3ea}{pkSerialNumber}
+\begin{DoxyCompactList}\small\item\em This is an identifier assigned to the packet by the context. Consecutive packets will have consecutive serial numbers. \item\end{DoxyCompactList}\item 
+UInt32 \hyperlink{struct_wintab_d_n_1_1_wintab_packet_afb9d197243879d81f43b1aaa482507ef}{pkCursor}
+\begin{DoxyCompactList}\small\item\em Specifies which cursor type generated the packet. \item\end{DoxyCompactList}\item 
+UInt32 \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a069d68ce089ae275eb30fd4b2746ad97}{pkButtons}
+\begin{DoxyCompactList}\small\item\em In absolute mode, is a UInt32 containing the current button state. In relative mode, is a UInt32 whose low word contains a button number, and whose high word contains one of the codes in EWintabPacketButtonCode. \item\end{DoxyCompactList}\item 
+Int32 \hyperlink{struct_wintab_d_n_1_1_wintab_packet_aa0986c51cb8c47d6eeaf1d0ec81335d0}{pkX}
+\begin{DoxyCompactList}\small\item\em In absolute mode, each is a UInt32 containing the scaled cursor location along the X axis. In relative mode, this is an Int32 containing scaled change in cursor position. \item\end{DoxyCompactList}\item 
+Int32 \hyperlink{struct_wintab_d_n_1_1_wintab_packet_ab3bd9cbd554397abd270d9c40fc1f34e}{pkY}
+\begin{DoxyCompactList}\small\item\em In absolute mode, each is a UInt32 containing the scaled cursor location along the Y axis. In relative mode, this is an Int32 containing scaled change in cursor position. \item\end{DoxyCompactList}\item 
+Int32 \hyperlink{struct_wintab_d_n_1_1_wintab_packet_ac5525a22d05a0a38e4522d9abbd91bb2}{pkZ}
+\begin{DoxyCompactList}\small\item\em In absolute mode, each is a UInt32 containing the scaled cursor location along the Z axis. In relative mode, this is an Int32 containing scaled change in cursor position. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_wintab_d_n_1_1_w_t_normal_pressure}{WTNormalPressure} \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a4a3d1c8e15c8ea7c933a3819608ec102}{pkNormalPressure}
+\begin{DoxyCompactList}\small\item\em In absolute mode, this is a UINT containing the adjusted state of the normal pressure, respectively. In relative mode, this is an int containing the change in adjusted pressure state. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_wintab_d_n_1_1_w_t_tangent_pressure}{WTTangentPressure} \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a182789bf6e328c9ae904daa31ccade5f}{pkTangentPressure}
+\begin{DoxyCompactList}\small\item\em In absolute mode, this is a UINT containing the adjusted state of the tangential pressure, respectively. In relative mode, this is an int containing the change in adjusted pressure state. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_wintab_d_n_1_1_w_t_orientation}{WTOrientation} \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a75a992e71d4c430f5eb5211e19ca1b32}{pkOrientation}
+\begin{DoxyCompactList}\small\item\em Contains updated cursor orientation information. See the \hyperlink{struct_wintab_d_n_1_1_w_t_orientation}{WTOrientation} structure for details. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_wintab_d_n_1_1_w_t_rotation}{WTRotation} \hyperlink{struct_wintab_d_n_1_1_wintab_packet_a8a5d64f55e6bfb5ec4d73c842b307876}{pkRotation}
+\begin{DoxyCompactList}\small\item\em Contains updated cursor rotation information. See the \hyperlink{struct_wintab_d_n_1_1_w_t_rotation}{WTRotation} structure for details. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wintab data packet. Contains the \char`\"{}Full Monty\char`\"{} for all possible data values. 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a069d68ce089ae275eb30fd4b2746ad97}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkButtons@{pkButtons}}
+\index{pkButtons@{pkButtons}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkButtons}]{\setlength{\rightskip}{0pt plus 5cm}UInt32 {\bf WintabDN::WintabPacket::pkButtons}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a069d68ce089ae275eb30fd4b2746ad97}
+
+
+In absolute mode, is a UInt32 containing the current button state. In relative mode, is a UInt32 whose low word contains a button number, and whose high word contains one of the codes in EWintabPacketButtonCode. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a5a6a3eaeed23e1898551cb42267a7167}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkChanged@{pkChanged}}
+\index{pkChanged@{pkChanged}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkChanged}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WTPKT} {\bf WintabDN::WintabPacket::pkChanged}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a5a6a3eaeed23e1898551cb42267a7167}
+
+
+Specifies which of the included packet data items have changed since the previously posted event. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a8e32af4bfcc46357c69ac501b756ac38}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkContext@{pkContext}}
+\index{pkContext@{pkContext}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkContext}]{\setlength{\rightskip}{0pt plus 5cm}{\bf HCTX} {\bf WintabDN::WintabPacket::pkContext}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a8e32af4bfcc46357c69ac501b756ac38}
+
+
+Specifies the context that generated the event. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_afb9d197243879d81f43b1aaa482507ef}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkCursor@{pkCursor}}
+\index{pkCursor@{pkCursor}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkCursor}]{\setlength{\rightskip}{0pt plus 5cm}UInt32 {\bf WintabDN::WintabPacket::pkCursor}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_afb9d197243879d81f43b1aaa482507ef}
+
+
+Specifies which cursor type generated the packet. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a4a3d1c8e15c8ea7c933a3819608ec102}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkNormalPressure@{pkNormalPressure}}
+\index{pkNormalPressure@{pkNormalPressure}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkNormalPressure}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WTNormalPressure} {\bf WintabDN::WintabPacket::pkNormalPressure}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a4a3d1c8e15c8ea7c933a3819608ec102}
+
+
+In absolute mode, this is a UINT containing the adjusted state of the normal pressure, respectively. In relative mode, this is an int containing the change in adjusted pressure state. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a75a992e71d4c430f5eb5211e19ca1b32}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkOrientation@{pkOrientation}}
+\index{pkOrientation@{pkOrientation}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkOrientation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WTOrientation} {\bf WintabDN::WintabPacket::pkOrientation}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a75a992e71d4c430f5eb5211e19ca1b32}
+
+
+Contains updated cursor orientation information. See the \hyperlink{struct_wintab_d_n_1_1_w_t_orientation}{WTOrientation} structure for details. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a8a5d64f55e6bfb5ec4d73c842b307876}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkRotation@{pkRotation}}
+\index{pkRotation@{pkRotation}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkRotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WTRotation} {\bf WintabDN::WintabPacket::pkRotation}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a8a5d64f55e6bfb5ec4d73c842b307876}
+
+
+Contains updated cursor rotation information. See the \hyperlink{struct_wintab_d_n_1_1_w_t_rotation}{WTRotation} structure for details. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a10550807dd2a1cd432c2ff3c271bd3ea}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkSerialNumber@{pkSerialNumber}}
+\index{pkSerialNumber@{pkSerialNumber}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkSerialNumber}]{\setlength{\rightskip}{0pt plus 5cm}UInt32 {\bf WintabDN::WintabPacket::pkSerialNumber}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a10550807dd2a1cd432c2ff3c271bd3ea}
+
+
+This is an identifier assigned to the packet by the context. Consecutive packets will have consecutive serial numbers. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a2f16f395c9f61bd40038a1029ec62912}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkStatus@{pkStatus}}
+\index{pkStatus@{pkStatus}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkStatus}]{\setlength{\rightskip}{0pt plus 5cm}UInt32 {\bf WintabDN::WintabPacket::pkStatus}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a2f16f395c9f61bd40038a1029ec62912}
+
+
+Specifies various status and error conditions. These conditions can be combined by using the bitwise OR opera-\/tor. The pkStatus field can be any any combination of the values defined in EWintabPacketStatusValue. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a182789bf6e328c9ae904daa31ccade5f}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkTangentPressure@{pkTangentPressure}}
+\index{pkTangentPressure@{pkTangentPressure}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkTangentPressure}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WTTangentPressure} {\bf WintabDN::WintabPacket::pkTangentPressure}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a182789bf6e328c9ae904daa31ccade5f}
+
+
+In absolute mode, this is a UINT containing the adjusted state of the tangential pressure, respectively. In relative mode, this is an int containing the change in adjusted pressure state. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_a4e655a9a5378d55d47a3e275e4e68093}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkTime@{pkTime}}
+\index{pkTime@{pkTime}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkTime}]{\setlength{\rightskip}{0pt plus 5cm}UInt32 {\bf WintabDN::WintabPacket::pkTime}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_a4e655a9a5378d55d47a3e275e4e68093}
+
+
+In absolute mode, specifies the system time at which the event was posted. In relative mode, specifies the elapsed time in milliseconds since the last packet. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_aa0986c51cb8c47d6eeaf1d0ec81335d0}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkX@{pkX}}
+\index{pkX@{pkX}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkX}]{\setlength{\rightskip}{0pt plus 5cm}Int32 {\bf WintabDN::WintabPacket::pkX}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_aa0986c51cb8c47d6eeaf1d0ec81335d0}
+
+
+In absolute mode, each is a UInt32 containing the scaled cursor location along the X axis. In relative mode, this is an Int32 containing scaled change in cursor position. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_ab3bd9cbd554397abd270d9c40fc1f34e}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkY@{pkY}}
+\index{pkY@{pkY}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkY}]{\setlength{\rightskip}{0pt plus 5cm}Int32 {\bf WintabDN::WintabPacket::pkY}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_ab3bd9cbd554397abd270d9c40fc1f34e}
+
+
+In absolute mode, each is a UInt32 containing the scaled cursor location along the Y axis. In relative mode, this is an Int32 containing scaled change in cursor position. 
+
+\hypertarget{struct_wintab_d_n_1_1_wintab_packet_ac5525a22d05a0a38e4522d9abbd91bb2}{
+\index{WintabDN::WintabPacket@{WintabDN::WintabPacket}!pkZ@{pkZ}}
+\index{pkZ@{pkZ}!WintabDN::WintabPacket@{WintabDN::WintabPacket}}
+\subsubsection[{pkZ}]{\setlength{\rightskip}{0pt plus 5cm}Int32 {\bf WintabDN::WintabPacket::pkZ}}}
+\label{struct_wintab_d_n_1_1_wintab_packet_ac5525a22d05a0a38e4522d9abbd91bb2}
+
+
+In absolute mode, each is a UInt32 containing the scaled cursor location along the Z axis. In relative mode, this is an Int32 containing scaled change in cursor position. 
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+WintabDN/CWintabData.cs\end{DoxyCompactItemize}

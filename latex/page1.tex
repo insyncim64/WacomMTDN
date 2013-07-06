@@ -1,0 +1,26 @@
+\hypertarget{page1_install_sec}{}\section{Installation}\label{page1_install_sec}
+\hypertarget{page1_step1}{}\subsection{Step 1: Install the Wacom tablet driver}\label{page1_step1}
+\hyperlink{namespace_wintab_d_n}{WintabDN} communicates with the Wacom tablet via the native code Wintab32.dll module. This DLL is installed as part of the tablet driver software. It is best to get the latest tablet driver software from the Wacom driver installation site at: \href{http://www.wacom.com/downloads/drivers.php}{\tt http://www.wacom.com/downloads/drivers.php}.
+
+Simply install the latest driver software for your tablet type and operating system. You may be prompted to reboot your system when the installation completes.\hypertarget{page1_step2}{}\subsection{Step 2: Test tablet driver installation}\label{page1_step2}
+After installation, plug in your tablet and make sure you can move the mouse cursor with the tablet pen. Then, use your pen to open the table preferences dialog either from the Windows Start menu or the control panel. For example, to open the preferences dialog for a Bamboo tablet, you would select All Programs $|$ Bamboo $|$ Bamboo Preferences.
+
+You can do a quick check to make sure that Wintab is communicating with the tablet driver before using \hyperlink{namespace_wintab_d_n}{WintabDN}. Go to the Wacom Software Developer Support plugin site at: \href{http://wacomeng.com/web/index.html}{\tt http://wacomeng.com/web/index.html} and test one of the web plugins (for example, the Table demo). If you can see the tablet properties being updated as you move the pen around, the tablet driver software is working correctly and communicating through Wintab.
+
+Finally, test the sample application: FormTestApp, that comes with the \hyperlink{namespace_wintab_d_n}{WintabDN} code distribution. Start that app and use your pen to press the \char`\"{}Test\char`\"{} button. You should see a stream of test output scroll down the left side of the dialog. You should also see varying pen X/Y/Pressure data as you press and lift the pen.
+
+When you've had enough fun doing that, use your pen to press the \char`\"{}Scribble\char`\"{} button. Now you should be able to draw lines of varying thickness with your pen. Note that the application will not move the system cursor when operating in the Sribble mode, so you will have to use your mouse cursor (or track pad) to close the app.
+
+The \hyperlink{namespace_wintab_d_n}{WintabDN} distribution has full sources for this test application.\hypertarget{page1_step3}{}\subsection{Step 3: Building WintabDN.DLL and FormTestApp}\label{page1_step3}
+The \hyperlink{namespace_wintab_d_n}{WintabDN} project was built using Visual Studio 2010. Other than the tablet driver software (which includes installing the native Wintab32.dll), there are no other software dependencies needed to build WintabDN.dll. Just press \char`\"{}Build\char`\"{} and you're good to go.
+
+The \hyperlink{namespace_wintab_d_n}{WintabDN} solution will build both WintabDN.DLL and the FormTestApp application.\hypertarget{page1_step4}{}\subsection{Step 4: Building WintabDN Documentation}\label{page1_step4}
+\hyperlink{namespace_wintab_d_n}{WintabDN} documentation is generated using the doxygen document-\/generating tool, which can be freely downloaded from: \href{http://www.stack.nl/~dimitri/doxygen/}{\tt http://www.stack.nl/$\sim$dimitri/doxygen/}.
+
+In addition to generating HTML web-\/help files, doxygen also uses the Windows HTML Help tool to generate Windows compiled help (CHM) files. This tool can be freely downloaded from: \href{http://msdn.microsoft.com/en-us/library/ms669985%28VS.85%29.aspx}{\tt http://msdn.microsoft.com/en-\/us/library/ms669985\%28VS.85\%29.aspx}.
+
+Document generation relies on comments within the code, as well as a doxygen configuration file. The configuration file for \hyperlink{namespace_wintab_d_n}{WintabDN} is called, wintabdn.dox.
+
+To generate documentation, execute the command: \begin{DoxyParagraph}{}
+{\ttfamily  {\bfseries doxygen wintabdn.dox} } 
+\end{DoxyParagraph}

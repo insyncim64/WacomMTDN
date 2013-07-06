@@ -1,0 +1,86 @@
+[OPTIONS]
+Compiled file=WacomDN.chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=WintabDN Help
+
+[WINDOWS]
+main="WintabDN Help","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+index.html
+pages.html
+page1.html
+page2.html
+page3.html
+annotated.html
+classes.html
+functions.html
+functions_func.html
+functions_vars.html
+functions_prop.html
+namespaces.html
+namespace_wintab_d_n.html
+class_wintab_d_n_1_1_c_mem_utils.html
+class_wintab_d_n_1_1_c_mem_utils-members.html
+struct_wintab_d_n_1_1_wintab_axis.html
+struct_wintab_d_n_1_1_wintab_axis-members.html
+struct_wintab_d_n_1_1_wintab_axis_array.html
+struct_wintab_d_n_1_1_wintab_log_context.html
+class_wintab_d_n_1_1_c_wintab_context.html
+class_wintab_d_n_1_1_c_wintab_context-members.html
+struct_wintab_d_n_1_1_w_t_normal_pressure.html
+struct_wintab_d_n_1_1_w_t_normal_pressure-members.html
+struct_wintab_d_n_1_1_w_t_tangent_pressure.html
+struct_wintab_d_n_1_1_w_t_tangent_pressure-members.html
+struct_wintab_d_n_1_1_w_t_orientation.html
+struct_wintab_d_n_1_1_w_t_orientation-members.html
+struct_wintab_d_n_1_1_w_t_rotation.html
+struct_wintab_d_n_1_1_w_t_rotation-members.html
+struct_wintab_d_n_1_1_wintab_packet.html
+struct_wintab_d_n_1_1_wintab_packet-members.html
+struct_wintab_d_n_1_1_w_t_extension_base.html
+struct_wintab_d_n_1_1_w_t_extension_base-members.html
+struct_wintab_d_n_1_1_w_t_exp_key_data.html
+struct_wintab_d_n_1_1_w_t_exp_key_data-members.html
+struct_wintab_d_n_1_1_w_t_slider_data.html
+struct_wintab_d_n_1_1_w_t_slider_data-members.html
+struct_wintab_d_n_1_1_wintab_packet_ext.html
+struct_wintab_d_n_1_1_wintab_packet_ext-members.html
+class_wintab_d_n_1_1_c_wintab_data.html
+class_wintab_d_n_1_1_c_wintab_data-members.html
+class_wintab_d_n_1_1_w_t_extensions_global.html
+class_wintab_d_n_1_1_w_t_extensions_global-members.html
+struct_wintab_d_n_1_1_w_t_extension_property_base.html
+struct_wintab_d_n_1_1_w_t_extension_property_base-members.html
+struct_wintab_d_n_1_1_w_t_extension_property.html
+struct_wintab_d_n_1_1_w_t_extension_property-members.html
+struct_wintab_d_n_1_1_w_t_extension_image_property.html
+struct_wintab_d_n_1_1_w_t_extension_image_property-members.html
+class_wintab_d_n_1_1_c_wintab_extensions.html
+class_wintab_d_n_1_1_c_wintab_extensions-members.html
+struct_wintab_d_n_1_1_h_w_n_d.html
+class_wintab_d_n_1_1_w_t_p_k_t.html
+class_wintab_d_n_1_1_f_i_x32.html
+class_wintab_d_n_1_1_h_c_t_x.html
+class_wintab_d_n_1_1_c_wintab_funcs.html
+class_wintab_d_n_1_1_c_wintab_funcs-members.html
+class_wintab_d_n_1_1_c_wintab_info.html
+class_wintab_d_n_1_1_c_wintab_info-members.html
+class_wintab_d_n_1_1_message_received_event_args.html
+class_wintab_d_n_1_1_message_received_event_args-members.html
+namespacemembers.html
+namespacemembers_enum.html
+tabs.css
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png

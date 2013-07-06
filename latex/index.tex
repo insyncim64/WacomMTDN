@@ -1,0 +1,23 @@
+\hyperlink{namespace_wintab_d_n}{WintabDN} is a wrapper of the Wintab32 API that supports writing .NET 2 compatible applications for Wacom digitizing tablets. \begin{DoxyAuthor}{Author}
+Robert Cohn, Wacom Technology Corporation (\href{mailto:rcohn@wacom.com}{\tt rcohn@wacom.com})
+\end{DoxyAuthor}
+\begin{DoxyParagraph}{Revision History}
+\begin{TabularC}{4}
+\hline
+Revision Date&Revisor's Name (Email)&Change Description&Version  \\\cline{1-4}
+11/13/2010&Robert Cohn (\href{mailto:rcohn@wacom.com}{\tt rcohn@wacom.com})&Initial Version&1.0  \\\cline{1-4}
+03/15/2013&Robert Cohn (\href{mailto:rcohn@wacom.com}{\tt rcohn@wacom.com})&Added Wintab Extensions Support&1.1  \\\cline{1-4}
+\end{TabularC}
+
+\end{DoxyParagraph}
+\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
+The Wintab32 API (originally developed by LCS/Telegraphics in the early 1990s) was created to provide a standardized programming interface to digitizing tablets, and was early adopted by Wacom Technology Corporation to support writing Windows operating system native C++ applications for its pen digitizing tablets. A complete description of the Wintab32 API can be found in the \href{Wintab_v140.htm}{\tt Wintab 1.4 specification}.
+
+The \hyperlink{namespace_wintab_d_n}{WintabDN} API was created to aid the development of managed code applications for Wacom's digital tablets. This new API is .NET 2 compatible and will support the writing of applications in any .NET supported language (such as C\# or VB.NET).
+
+With \hyperlink{namespace_wintab_d_n}{WintabDN}, an application developer can, for example, easily write a .NET application to set up and capture pen data indicating X/Y location and pressure. Other applications can be written to monitor pen tilt or rotation. The API can be incorporated into many software applications where precise pen location data would be useful (such as MATLAB, or CAD applications).
+
+\hyperlink{namespace_wintab_d_n}{WintabDN} is a work in progress. Version 1.0 only wraps a subset of the extensive Wintab32 native implementation, and it is hoped that a growing community of developers will use \hyperlink{namespace_wintab_d_n}{WintabDN} and contribute to its maintenance and extension.\hypertarget{index_contact_sec}{}\section{Contact Info}\label{index_contact_sec}
+If you have questions about using \hyperlink{namespace_wintab_d_n}{WintabDN}, you can send email to this address: \href{mailto:DeveloperEmailGroup@wacom.com}{\tt DeveloperEmailGroup@wacom.com}
+
+Also, visit \href{http://wacomeng.com/windows/index.html}{\tt Wacom Software Developer Support} for general Wintab32 tablet programming support. 

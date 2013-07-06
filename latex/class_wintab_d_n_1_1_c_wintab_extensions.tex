@@ -1,0 +1,273 @@
+\hypertarget{class_wintab_d_n_1_1_c_wintab_extensions}{
+\section{WintabDN::CWintabExtensions Class Reference}
+\label{class_wintab_d_n_1_1_c_wintab_extensions}\index{WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}}
+}
+
+
+API for Wintab extensions functionality (Wintab 1.4).  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static UInt32 \hyperlink{class_wintab_d_n_1_1_c_wintab_extensions_a341efefa1ea2122f128582744ca0a72d}{GetWTExtensionMask} (\hyperlink{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{EWTXExtensionTag} tag\_\-I)
+\begin{DoxyCompactList}\small\item\em Return the extension mask for the given tag. \item\end{DoxyCompactList}\item 
+static UInt32 \hyperlink{class_wintab_d_n_1_1_c_wintab_extensions_afccef5150c3899b2ce92ee7344cc685a}{FindWTExtensionIndex} (\hyperlink{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{EWTXExtensionTag} tag\_\-I)
+\begin{DoxyCompactList}\small\item\em Returns extension index tag for given tag, if possible. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_extensions_a03d4b7c76028a930e958d052b35272b7}{ControlPropertyGet} (\hyperlink{class_wintab_d_n_1_1_h_c_t_x}{HCTX} context\_\-I, byte extTagIndex\_\-I, byte tabletIndex\_\-I, byte controlIndex\_\-I, byte functionIndex\_\-I, ushort propertyID\_\-I, ref UInt32 result\_\-O)
+\begin{DoxyCompactList}\small\item\em Get a property value from an extension. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_extensions_a57902151c5bc1beee158adfd3710cd77}{ControlPropertySet} (\hyperlink{class_wintab_d_n_1_1_h_c_t_x}{HCTX} context\_\-I, byte extTagIndex\_\-I, byte tabletIndex\_\-I, byte controlIndex\_\-I, byte functionIndex\_\-I, ushort propertyID\_\-I, UInt32 value\_\-I)
+\begin{DoxyCompactList}\small\item\em Sets an extension control property value. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_extensions_a605282fa9a1d72ff1c53775606a1ba83}{ControlPropertySet} (\hyperlink{class_wintab_d_n_1_1_h_c_t_x}{HCTX} context\_\-I, byte extTagIndex\_\-I, byte tabletIndex\_\-I, byte controlIndex\_\-I, byte functionIndex\_\-I, ushort propertyID\_\-I, String value\_\-I)
+\begin{DoxyCompactList}\small\item\em Sets an extension control property string. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_extensions_a70da8e34e56b80909906820679911b75}{ControlPropertySetImage} (\hyperlink{class_wintab_d_n_1_1_h_c_t_x}{HCTX} context\_\-I, byte extTagIndex\_\-I, byte tabletIndex\_\-I, byte controlIndex\_\-I, byte functionIndex\_\-I, ushort propertyID\_\-I, String imageFilePath\_\-I)
+\begin{DoxyCompactList}\small\item\em Sets an extension control property image (if supported by tablet). \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_extensions_a2cf52c3a3471e4a5163dfc23d3749523}{SetDisplayProperty} (\hyperlink{class_wintab_d_n_1_1_c_wintab_context}{CWintabContext} context\_\-I, \hyperlink{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{EWTXExtensionTag} extTagIndex\_\-I, UInt32 tabletIndex\_\-I, UInt32 controlIndex\_\-I, UInt32 functionIndex\_\-I, String imageFilePath\_\-I)
+\begin{DoxyCompactList}\small\item\em Set tablet OLED display property. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+API for Wintab extensions functionality (Wintab 1.4). Wintab Extensions provides support for overriding tablet control functionality with functionality provided by an application. The tablet controls that can be overriden with extensions are: Express Keys, Touch Rings and Touch Strips.
+
+For example, an application can respond to an Express Key button press by defining what action should occur within that application when the button is pressed. Similarly, an application can define actions for Touch Ring and Touch Strip button modes, and respond to user swipes on those controls to provide customized behavior. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_extensions_a03d4b7c76028a930e958d052b35272b7}{
+\index{WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}!ControlPropertyGet@{ControlPropertyGet}}
+\index{ControlPropertyGet@{ControlPropertyGet}!WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}}
+\subsubsection[{ControlPropertyGet}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabExtensions::ControlPropertyGet (
+\begin{DoxyParamCaption}
+\item[{{\bf HCTX}}]{ context\_\-I, }
+\item[{byte}]{ extTagIndex\_\-I, }
+\item[{byte}]{ tabletIndex\_\-I, }
+\item[{byte}]{ controlIndex\_\-I, }
+\item[{byte}]{ functionIndex\_\-I, }
+\item[{ushort}]{ propertyID\_\-I, }
+\item[{ref UInt32}]{ result\_\-O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_extensions_a03d4b7c76028a930e958d052b35272b7}
+
+
+Get a property value from an extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context\_\-I} & Wintab context\\
+\hline
+{\em extTagIndex\_\-I} & extension index tag\\
+\hline
+{\em tabletIndex\_\-I} & tablet index\\
+\hline
+{\em controlIndex\_\-I} & control index on the tablet\\
+\hline
+{\em functionIndex\_\-I} & function index on the control\\
+\hline
+{\em propertyID\_\-I} & ID of the property requested\\
+\hline
+{\em result\_\-O} & value of the property requested\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if property obtained
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_extensions_a57902151c5bc1beee158adfd3710cd77}{
+\index{WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}!ControlPropertySet@{ControlPropertySet}}
+\index{ControlPropertySet@{ControlPropertySet}!WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}}
+\subsubsection[{ControlPropertySet}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabExtensions::ControlPropertySet (
+\begin{DoxyParamCaption}
+\item[{{\bf HCTX}}]{ context\_\-I, }
+\item[{byte}]{ extTagIndex\_\-I, }
+\item[{byte}]{ tabletIndex\_\-I, }
+\item[{byte}]{ controlIndex\_\-I, }
+\item[{byte}]{ functionIndex\_\-I, }
+\item[{ushort}]{ propertyID\_\-I, }
+\item[{UInt32}]{ value\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_extensions_a57902151c5bc1beee158adfd3710cd77}
+
+
+Sets an extension control property value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context\_\-I} & wintab context\\
+\hline
+{\em extTagIndex\_\-I} & which extension tag we're setting\\
+\hline
+{\em tabletIndex\_\-I} & index of the tablet being set\\
+\hline
+{\em controlIndex\_\-I} & the index of the control being set\\
+\hline
+{\em functionIndex\_\-I} & the index of the control function being set\\
+\hline
+{\em propertyID\_\-I} & ID of the property being set\\
+\hline
+{\em value\_\-I} & value of the property being set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_extensions_a605282fa9a1d72ff1c53775606a1ba83}{
+\index{WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}!ControlPropertySet@{ControlPropertySet}}
+\index{ControlPropertySet@{ControlPropertySet}!WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}}
+\subsubsection[{ControlPropertySet}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabExtensions::ControlPropertySet (
+\begin{DoxyParamCaption}
+\item[{{\bf HCTX}}]{ context\_\-I, }
+\item[{byte}]{ extTagIndex\_\-I, }
+\item[{byte}]{ tabletIndex\_\-I, }
+\item[{byte}]{ controlIndex\_\-I, }
+\item[{byte}]{ functionIndex\_\-I, }
+\item[{ushort}]{ propertyID\_\-I, }
+\item[{String}]{ value\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_extensions_a605282fa9a1d72ff1c53775606a1ba83}
+
+
+Sets an extension control property string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context\_\-I} & wintab context\\
+\hline
+{\em extTagIndex\_\-I} & which extension tag we're setting\\
+\hline
+{\em tabletIndex\_\-I} & index of the tablet being set\\
+\hline
+{\em controlIndex\_\-I} & the index of the control being set\\
+\hline
+{\em functionIndex\_\-I} & the index of the control function being set\\
+\hline
+{\em propertyID\_\-I} & ID of the property being set\\
+\hline
+{\em value\_\-I} & value of the property being set (a string)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_extensions_a70da8e34e56b80909906820679911b75}{
+\index{WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}!ControlPropertySetImage@{ControlPropertySetImage}}
+\index{ControlPropertySetImage@{ControlPropertySetImage}!WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}}
+\subsubsection[{ControlPropertySetImage}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabExtensions::ControlPropertySetImage (
+\begin{DoxyParamCaption}
+\item[{{\bf HCTX}}]{ context\_\-I, }
+\item[{byte}]{ extTagIndex\_\-I, }
+\item[{byte}]{ tabletIndex\_\-I, }
+\item[{byte}]{ controlIndex\_\-I, }
+\item[{byte}]{ functionIndex\_\-I, }
+\item[{ushort}]{ propertyID\_\-I, }
+\item[{String}]{ imageFilePath\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_extensions_a70da8e34e56b80909906820679911b75}
+
+
+Sets an extension control property image (if supported by tablet). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context\_\-I} & wintab context\\
+\hline
+{\em extTagIndex\_\-I} & which extension tag we're setting\\
+\hline
+{\em tabletIndex\_\-I} & index of the tablet being set\\
+\hline
+{\em controlIndex\_\-I} & the index of the control being set\\
+\hline
+{\em functionIndex\_\-I} & the index of the control function being set\\
+\hline
+{\em propertyID\_\-I} & ID of the property being set\\
+\hline
+{\em value\_\-I} & value of the property being set (a string)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_extensions_afccef5150c3899b2ce92ee7344cc685a}{
+\index{WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}!FindWTExtensionIndex@{FindWTExtensionIndex}}
+\index{FindWTExtensionIndex@{FindWTExtensionIndex}!WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}}
+\subsubsection[{FindWTExtensionIndex}]{\setlength{\rightskip}{0pt plus 5cm}static UInt32 WintabDN::CWintabExtensions::FindWTExtensionIndex (
+\begin{DoxyParamCaption}
+\item[{{\bf EWTXExtensionTag}}]{ tag\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_extensions_afccef5150c3899b2ce92ee7344cc685a}
+
+
+Returns extension index tag for given tag, if possible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\_\-I} & type of extension being searched for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0xFFFFFFFF on error
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_extensions_a341efefa1ea2122f128582744ca0a72d}{
+\index{WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}!GetWTExtensionMask@{GetWTExtensionMask}}
+\index{GetWTExtensionMask@{GetWTExtensionMask}!WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}}
+\subsubsection[{GetWTExtensionMask}]{\setlength{\rightskip}{0pt plus 5cm}static UInt32 WintabDN::CWintabExtensions::GetWTExtensionMask (
+\begin{DoxyParamCaption}
+\item[{{\bf EWTXExtensionTag}}]{ tag\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_extensions_a341efefa1ea2122f128582744ca0a72d}
+
+
+Return the extension mask for the given tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\_\-I} & type of extension being searched for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0xFFFFFFFF on error
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_extensions_a2cf52c3a3471e4a5163dfc23d3749523}{
+\index{WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}!SetDisplayProperty@{SetDisplayProperty}}
+\index{SetDisplayProperty@{SetDisplayProperty}!WintabDN::CWintabExtensions@{WintabDN::CWintabExtensions}}
+\subsubsection[{SetDisplayProperty}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabExtensions::SetDisplayProperty (
+\begin{DoxyParamCaption}
+\item[{{\bf CWintabContext}}]{ context\_\-I, }
+\item[{{\bf EWTXExtensionTag}}]{ extTagIndex\_\-I, }
+\item[{UInt32}]{ tabletIndex\_\-I, }
+\item[{UInt32}]{ controlIndex\_\-I, }
+\item[{UInt32}]{ functionIndex\_\-I, }
+\item[{String}]{ imageFilePath\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_extensions_a2cf52c3a3471e4a5163dfc23d3749523}
+
+
+Set tablet OLED display property. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context\_\-I} & wintab context\\
+\hline
+{\em extTagIndex\_\-I} & which extension tag we're setting\\
+\hline
+{\em tabletIndex\_\-I} & index of the tablet being set\\
+\hline
+{\em controlIndex\_\-I} & the index of the control being set\\
+\hline
+{\em functionIndex\_\-I} & the index of the control function being set\\
+\hline
+{\em imageFilePath\_\-I} & path to PNG image file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful and tablet supports property
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+WintabDN/CWintabExtensions.cs\end{DoxyCompactItemize}

@@ -1,0 +1,19 @@
+The \hyperlink{namespace_wintab_d_n}{WintabDN} distribution comes with a sample application, FormTestApp, which exercises most of the \hyperlink{namespace_wintab_d_n}{WintabDN} functionality, as well as demonstrates how to use the API to build a simple scribble application.\hypertarget{page_testWTInfo_sec}{}\section{Testing CWintabInfo}\label{page_testWTInfo_sec}
+$<$$<$TODO -\/ fill in details $>$$>$\hypertarget{page_scribbleDemo_sec}{}\section{Scribble Demo}\label{page_scribbleDemo_sec}
+The Scribble demo shows how to set up a context, register for Wintab data packets, provide a handler for Wintab events, and display graphics corresponding to pen X/Y position and pen pressure data.
+
+
+\begin{DoxyCode}
+      private void scribbleButton_Click(object sender, EventArgs e)
+        {
+            ClearDisplay();
+            CloseCurrentContext();
+            Enable_Scribble(true);
+
+            // Open a context and try to capture pen data;
+            // Do not control system cursor.
+
+            InitDataCapture(m_TABEXTX, m_TABEXTY, false);
+        }
+\end{DoxyCode}
+ 

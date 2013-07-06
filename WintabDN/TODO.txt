@@ -1,0 +1,18 @@
+- Add NativeWindow support for event handling.
+
+- For some reason, WTOpen fails about half the time.  Find out why.  
+  You'll need to debug through the Wintab code
+
+- Find out why WTInfoA(WTI_CURSORS, CSR_NAME, buf) returns "Puck".  Seems it should return "Pen".
+
+- Check returned values from GetDeviceAxis() against Win32 version.
+
+- Restore the HWND, HCTX and FIX32 structs - they're actually OK.
+
+- Add description of wrapped Wintab functions.
+
+- Add support for PACKETEX (WT_PACKETEX) extensions (see TabletControlsSample).
+
+- TODO - Implement GetPacketDataRange()
+
+- TODO - Implement GetPacketData for multiple packets.

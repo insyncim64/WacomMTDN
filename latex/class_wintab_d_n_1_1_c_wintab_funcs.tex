@@ -1,0 +1,426 @@
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs}{
+\section{WintabDN::CWintabFuncs Class Reference}
+\label{class_wintab_d_n_1_1_c_wintab_funcs}\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+}
+
+
+P/Invoke wrappers for Wintab functions. See Wintab\_\-v140.doc (Wintab 1.4 spec) and related Wintab documentation for details.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static UInt32 \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_a2ec8c8377a44ea036a5c7fe7c365cf95}{WTInfoA} (UInt32 wCategory\_\-I, UInt32 nIndex\_\-I, IntPtr lpOutput\_\-O)
+\begin{DoxyCompactList}\small\item\em This function returns global information about the interface in an application-\/supplied buffer. Different types of information are specified by different index arguments. Applications use this function to receive information about tablet coordinates, physical dimensions, capabilities, and cursor types. \item\end{DoxyCompactList}\item 
+static P\_\-HCTX \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_a81266ff31a9a8f8091c3b84a10fec0ca}{WTOpenA} (P\_\-HWND hWnd\_\-I, ref \hyperlink{struct_wintab_d_n_1_1_wintab_log_context}{WintabLogContext} logContext\_\-I, bool enable\_\-I)
+\begin{DoxyCompactList}\small\item\em This function establishes an active context on the tablet. On successful completion of this function, the application may begin receiving tablet events via messages (if they were requested), and may use the handle returned to poll the context, or to perform other context-\/related functions. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_af86aa97fc2ba0deb549d069bba7a29c7}{WTClose} (P\_\-HCTX hctx\_\-I)
+\begin{DoxyCompactList}\small\item\em This function closes and destroys the tablet context object. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_ac95222347f25482ef10ec9619881c4d6}{WTEnable} (P\_\-HCTX hctx\_\-I, bool enable\_\-I)
+\begin{DoxyCompactList}\small\item\em This function enables or disables a tablet context, temporarily turning on or off the processing of packets. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_a2ff68c48cdfa2b610e95e2088073fdb5}{WTOverlap} (P\_\-HCTX hctx\_\-I, bool toTop\_\-I)
+\begin{DoxyCompactList}\small\item\em This function sends a tablet context to the top or bottom of the order of overlapping tablet contexts. \item\end{DoxyCompactList}\item 
+static UInt32 \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_a87f5573c610b759ad6da04d1dd20f8c3}{WTQueueSizeGet} (P\_\-HCTX hctx\_\-I)
+\begin{DoxyCompactList}\small\item\em This function returns the number of packets the context's queue can hold. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_a3dce149610861d43038221c8be3c2262}{WTQueueSizeSet} (P\_\-HCTX hctx\_\-I, UInt32 nPkts\_\-I)
+\begin{DoxyCompactList}\small\item\em This function attempts to change the context's queue size to the value specified in nPkts\_\-I. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_ae48b913853eadb05992c1d6688c9825d}{WTPacket} (P\_\-HCTX hctx\_\-I, UInt32 pktSerialNum\_\-I, IntPtr pktBuf\_\-O)
+\begin{DoxyCompactList}\small\item\em This function fills in the passed pktBuf\_\-O buffer with the context event packet having the specified serial number. The returned packet and any older packets are removed from the context's internal queue. \item\end{DoxyCompactList}\item 
+static UInt32 \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_ade1a359871fe9dd02ec2f3dd593cf7fa}{WTPacketsGet} (P\_\-HCTX hctx\_\-I, UInt32 maxPkts\_\-I, IntPtr pktBuf\_\-O)
+\begin{DoxyCompactList}\small\item\em This function copies the next maxPkts\_\-I events from the packet queue of context hCtx to the passed pktBuf\_\-O buffer and removes them from the queue. \item\end{DoxyCompactList}\item 
+static UInt32 \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_a63cd6d8f13c3c19bd8b30567e02829ac}{WTDataGet} (P\_\-HCTX hctx\_\-I, UInt32 pktIDStart\_\-I, UInt32 pktIDEnd\_\-I, UInt32 maxPkts\_\-I, IntPtr pktBuf\_\-O, ref UInt32 numPkts\_\-O)
+\begin{DoxyCompactList}\small\item\em A This function copies all packets with Identifiers between pktIDStart\_\-I and pktIDEnd\_\-I inclusive from the context's queue to the passed buffer and removes them from the queue. \item\end{DoxyCompactList}\item 
+static UInt32 \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_ad9c542ad221c675184a066a688ab7e84}{WTDataPeek} (P\_\-HCTX hctx\_\-I, UInt32 pktIDStart\_\-I, UInt32 pktIDEnd\_\-I, UInt32 maxPkts\_\-I, IntPtr pktBuf\_\-O, ref UInt32 numPkts\_\-O)
+\begin{DoxyCompactList}\small\item\em This function copies all packets with serial numbers between pktIDStart\_\-I and pktIDEnd\_\-I inclusive, from the context's queue to the passed buffer without removing them from the queue. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_a3b797a5a70f68096c43b7d0e8088c4c3}{WTQueuePacketsEx} (P\_\-HCTX hctx\_\-I, ref UInt32 pktIDOldest\_\-O, ref UInt32 pktIDNewest\_\-O)
+\begin{DoxyCompactList}\small\item\em This function returns the identifiers of the oldest and newest packets currently in the queue. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_a83cfeb6f7c4c5e69093a1f475b68d526}{WTExtGet} (P\_\-HCTX hctx\_\-I, UInt32 extTag\_\-I, IntPtr extData\_\-O)
+\begin{DoxyCompactList}\small\item\em This function retrieves any context-\/specific data for an extension. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs_ac8b331b5c83320742c6e222cf24e56de}{WTExtSet} (P\_\-HCTX hctx\_\-I, UInt32 extTag\_\-I, IntPtr extData\_\-I)
+\begin{DoxyCompactList}\small\item\em This function sets any context-\/specific data for an extension. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+P/Invoke wrappers for Wintab functions. See Wintab\_\-v140.doc (Wintab 1.4 spec) and related Wintab documentation for details. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_af86aa97fc2ba0deb549d069bba7a29c7}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTClose@{WTClose}}
+\index{WTClose@{WTClose}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTClose}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabFuncs::WTClose (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_af86aa97fc2ba0deb549d069bba7a29c7}
+
+
+This function closes and destroys the tablet context object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context to be closed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns a non-\/zero value if the context was valid and was destroyed. Otherwise, it returns zero.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_a63cd6d8f13c3c19bd8b30567e02829ac}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTDataGet@{WTDataGet}}
+\index{WTDataGet@{WTDataGet}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTDataGet}]{\setlength{\rightskip}{0pt plus 5cm}static UInt32 WintabDN::CWintabFuncs::WTDataGet (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{UInt32}]{ pktIDStart\_\-I, }
+\item[{UInt32}]{ pktIDEnd\_\-I, }
+\item[{UInt32}]{ maxPkts\_\-I, }
+\item[{IntPtr}]{ pktBuf\_\-O, }
+\item[{ref UInt32}]{ numPkts\_\-O}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_a63cd6d8f13c3c19bd8b30567e02829ac}
+
+
+A This function copies all packets with Identifiers between pktIDStart\_\-I and pktIDEnd\_\-I inclusive from the context's queue to the passed buffer and removes them from the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context whose packets are being returned.\\
+\hline
+{\em pktIDStart\_\-I} & Identifier of the oldest tablet event to return.\\
+\hline
+{\em pktIDEnd\_\-I} & Identifier of the newest tablet event to return.\\
+\hline
+{\em maxPkts\_\-I} & Specifies the maximum number of packets to return.\\
+\hline
+{\em pktBuf\_\-O} & Buffer to receive the event packets.\\
+\hline
+{\em numPkts\_\-O} & Number of packets actually copied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value is the total number of packets found in the queue between pktIDStart\_\-I and pktIDEnd\_\-I.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_ad9c542ad221c675184a066a688ab7e84}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTDataPeek@{WTDataPeek}}
+\index{WTDataPeek@{WTDataPeek}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTDataPeek}]{\setlength{\rightskip}{0pt plus 5cm}static UInt32 WintabDN::CWintabFuncs::WTDataPeek (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{UInt32}]{ pktIDStart\_\-I, }
+\item[{UInt32}]{ pktIDEnd\_\-I, }
+\item[{UInt32}]{ maxPkts\_\-I, }
+\item[{IntPtr}]{ pktBuf\_\-O, }
+\item[{ref UInt32}]{ numPkts\_\-O}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_ad9c542ad221c675184a066a688ab7e84}
+
+
+This function copies all packets with serial numbers between pktIDStart\_\-I and pktIDEnd\_\-I inclusive, from the context's queue to the passed buffer without removing them from the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context whose packets are being read.\\
+\hline
+{\em pktIDStart\_\-I} & Identifier of the oldest tablet event to return.\\
+\hline
+{\em pktIDEnd\_\-I} & Identifier of the newest tablet event to return.\\
+\hline
+{\em maxPkts\_\-I} & Specifies the maximum number of packets to return.\\
+\hline
+{\em pktBuf\_\-O} & Buffer to receive the event packets.\\
+\hline
+{\em numPkts\_\-O} & Number of packets actually copied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value is the total number of packets found in the queue between pktIDStart\_\-I and pktIDEnd\_\-I.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_ac95222347f25482ef10ec9619881c4d6}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTEnable@{WTEnable}}
+\index{WTEnable@{WTEnable}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTEnable}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabFuncs::WTEnable (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{bool}]{ enable\_\-I}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_ac95222347f25482ef10ec9619881c4d6}
+
+
+This function enables or disables a tablet context, temporarily turning on or off the processing of packets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context to be enabled or disabled.\\
+\hline
+{\em enable\_\-I} & Specifies enabling if non-\/zero, disabling if zero.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns true if the enable or disable request was satisfied.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_a83cfeb6f7c4c5e69093a1f475b68d526}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTExtGet@{WTExtGet}}
+\index{WTExtGet@{WTExtGet}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTExtGet}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabFuncs::WTExtGet (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{UInt32}]{ extTag\_\-I, }
+\item[{IntPtr}]{ extData\_\-O}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_a83cfeb6f7c4c5e69093a1f475b68d526}
+
+
+This function retrieves any context-\/specific data for an extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context whose extension attributes are being retrieved.\\
+\hline
+{\em extTag\_\-I} & Identifies the extension tag for which context-\/specific data is being retrieved.\\
+\hline
+{\em extData\_\-O} & Points to a buffer to hold retrieved data (\hyperlink{struct_wintab_d_n_1_1_w_t_extension_property}{WTExtensionProperty}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_ac8b331b5c83320742c6e222cf24e56de}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTExtSet@{WTExtSet}}
+\index{WTExtSet@{WTExtSet}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTExtSet}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabFuncs::WTExtSet (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{UInt32}]{ extTag\_\-I, }
+\item[{IntPtr}]{ extData\_\-I}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_ac8b331b5c83320742c6e222cf24e56de}
+
+
+This function sets any context-\/specific data for an extension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context whose extension attributes are being modified.\\
+\hline
+{\em extTag\_\-I} & Identifies the extension tag for which context-\/specific data is being modified.\\
+\hline
+{\em extData\_\-I} & Points to the new data (\hyperlink{struct_wintab_d_n_1_1_w_t_extension_property}{WTExtensionProperty}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_a2ec8c8377a44ea036a5c7fe7c365cf95}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTInfoA@{WTInfoA}}
+\index{WTInfoA@{WTInfoA}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTInfoA}]{\setlength{\rightskip}{0pt plus 5cm}static UInt32 WintabDN::CWintabFuncs::WTInfoA (
+\begin{DoxyParamCaption}
+\item[{UInt32}]{ wCategory\_\-I, }
+\item[{UInt32}]{ nIndex\_\-I, }
+\item[{IntPtr}]{ lpOutput\_\-O}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_a2ec8c8377a44ea036a5c7fe7c365cf95}
+
+
+This function returns global information about the interface in an application-\/supplied buffer. Different types of information are specified by different index arguments. Applications use this function to receive information about tablet coordinates, physical dimensions, capabilities, and cursor types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wCategory\_\-I} & Identifies the category from which information is being requested.\\
+\hline
+{\em nIndex\_\-I} & Identifies which information is being requested from within the category.\\
+\hline
+{\em lpOutput\_\-O} & Points to a buffer to hold the requested information.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value specifies the size of the returned information in bytes. If the information is not supported, the function returns zero. If a tablet is not physically present, this function always returns zero. 
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_a81266ff31a9a8f8091c3b84a10fec0ca}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTOpenA@{WTOpenA}}
+\index{WTOpenA@{WTOpenA}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTOpenA}]{\setlength{\rightskip}{0pt plus 5cm}static P\_\-HCTX WintabDN::CWintabFuncs::WTOpenA (
+\begin{DoxyParamCaption}
+\item[{P\_\-HWND}]{ hWnd\_\-I, }
+\item[{ref {\bf WintabLogContext}}]{ logContext\_\-I, }
+\item[{bool}]{ enable\_\-I}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_a81266ff31a9a8f8091c3b84a10fec0ca}
+
+
+This function establishes an active context on the tablet. On successful completion of this function, the application may begin receiving tablet events via messages (if they were requested), and may use the handle returned to poll the context, or to perform other context-\/related functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hWnd\_\-I} & Identifies the window that owns the tablet context, and receives messages from the context.\\
+\hline
+{\em logContext\_\-I} & Points to an application-\/provided \hyperlink{struct_wintab_d_n_1_1_wintab_log_context}{WintabLogContext} data structure describing the context to be opened.\\
+\hline
+{\em enable\_\-I} & Specifies whether the new context will immediately begin processing input data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value identifies the new context. It is NULL if the context is not opened.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_a2ff68c48cdfa2b610e95e2088073fdb5}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTOverlap@{WTOverlap}}
+\index{WTOverlap@{WTOverlap}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTOverlap}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabFuncs::WTOverlap (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{bool}]{ toTop\_\-I}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_a2ff68c48cdfa2b610e95e2088073fdb5}
+
+
+This function sends a tablet context to the top or bottom of the order of overlapping tablet contexts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context to move within the overlap order.\\
+\hline
+{\em toTop\_\-I} & Specifies sending the context to the top of the overlap order true, or to the bottom if false.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function returns true if successful.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_ae48b913853eadb05992c1d6688c9825d}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTPacket@{WTPacket}}
+\index{WTPacket@{WTPacket}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTPacket}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabFuncs::WTPacket (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{UInt32}]{ pktSerialNum\_\-I, }
+\item[{IntPtr}]{ pktBuf\_\-O}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_ae48b913853eadb05992c1d6688c9825d}
+
+
+This function fills in the passed pktBuf\_\-O buffer with the context event packet having the specified serial number. The returned packet and any older packets are removed from the context's internal queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context whose packets are being returned.\\
+\hline
+{\em pktSerialNum\_\-I} & Serial number of the tablet event to return.\\
+\hline
+{\em pktBuf\_\-O} & Buffer to receive the event packet.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value is true if the specified packet was found and returned. It is false if the specified packet was not found in the queue.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_ade1a359871fe9dd02ec2f3dd593cf7fa}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTPacketsGet@{WTPacketsGet}}
+\index{WTPacketsGet@{WTPacketsGet}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTPacketsGet}]{\setlength{\rightskip}{0pt plus 5cm}static UInt32 WintabDN::CWintabFuncs::WTPacketsGet (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{UInt32}]{ maxPkts\_\-I, }
+\item[{IntPtr}]{ pktBuf\_\-O}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_ade1a359871fe9dd02ec2f3dd593cf7fa}
+
+
+This function copies the next maxPkts\_\-I events from the packet queue of context hCtx to the passed pktBuf\_\-O buffer and removes them from the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context whose packets are being returned.\\
+\hline
+{\em maxPkts\_\-I} & Specifies the maximum number of packets to return\\
+\hline
+{\em pktBuf\_\-O} & Buffer to receive the event packets.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value is the number of packets copied in the buffer.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_a3b797a5a70f68096c43b7d0e8088c4c3}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTQueuePacketsEx@{WTQueuePacketsEx}}
+\index{WTQueuePacketsEx@{WTQueuePacketsEx}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTQueuePacketsEx}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabFuncs::WTQueuePacketsEx (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{ref UInt32}]{ pktIDOldest\_\-O, }
+\item[{ref UInt32}]{ pktIDNewest\_\-O}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_a3b797a5a70f68096c43b7d0e8088c4c3}
+
+
+This function returns the identifiers of the oldest and newest packets currently in the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context whose queue is being queried.\\
+\hline
+{\em pktIDOldest\_\-O} & Identifier of the oldest packet in the queue.\\
+\hline
+{\em pktIDNewest\_\-O} & Identifier of the newest packet in the queue.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns bool if successful.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_a87f5573c610b759ad6da04d1dd20f8c3}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTQueueSizeGet@{WTQueueSizeGet}}
+\index{WTQueueSizeGet@{WTQueueSizeGet}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTQueueSizeGet}]{\setlength{\rightskip}{0pt plus 5cm}static UInt32 WintabDN::CWintabFuncs::WTQueueSizeGet (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_a87f5573c610b759ad6da04d1dd20f8c3}
+
+
+This function returns the number of packets the context's queue can hold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context whose queue size is being returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of packets the queue can hold.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_funcs_a3dce149610861d43038221c8be3c2262}{
+\index{WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}!WTQueueSizeSet@{WTQueueSizeSet}}
+\index{WTQueueSizeSet@{WTQueueSizeSet}!WintabDN::CWintabFuncs@{WintabDN::CWintabFuncs}}
+\subsubsection[{WTQueueSizeSet}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabFuncs::WTQueueSizeSet (
+\begin{DoxyParamCaption}
+\item[{P\_\-HCTX}]{ hctx\_\-I, }
+\item[{UInt32}]{ nPkts\_\-I}
+\end{DoxyParamCaption}
+)}}
+\label{class_wintab_d_n_1_1_c_wintab_funcs_a3dce149610861d43038221c8be3c2262}
+
+
+This function attempts to change the context's queue size to the value specified in nPkts\_\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hctx\_\-I} & Identifies the context whose queue size is being set.\\
+\hline
+{\em nPkts\_\-I} & Specifies the requested queue size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value is true if the queue size was successfully changed.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+WintabDN/CWintabFuncs.cs\end{DoxyCompactItemize}

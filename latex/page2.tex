@@ -1,0 +1,196 @@
+The \hyperlink{namespace_wintab_d_n}{WintabDN} distribution comes with a sample application, FormTestApp, which exercises most of the \hyperlink{namespace_wintab_d_n}{WintabDN} functionality, as well as demonstrates how to use the API to build a simple scribble application.\hypertarget{page2_scribbleDemo_sec}{}\section{Scribble Demo}\label{page2_scribbleDemo_sec}
+The Scribble demo shows how to set up a context, register for Wintab data packets, provide a handler for Wintab events, and display graphics corresponding to pen X/Y position and pen pressure data.
+
+The following code segment shows the \char`\"{}Scribble\char`\"{} button handler, which opens sets up for pen data capture using the {\ttfamily {\bfseries InitDataCapture()}} function. 
+\begin{DoxyCode}
+    private void scribbleButton_Click(object sender, EventArgs e)
+    {
+        ClearDisplay();
+        CloseCurrentContext();
+        Enable_Scribble(true);
+
+        // Open a context and try to capture pen data;
+        // Do not control system cursor.
+
+        InitDataCapture(m_TABEXTX, m_TABEXTY, false);
+    }
+\end{DoxyCode}
+
+
+{\ttfamily {\bfseries InitDataCapture()}} makes sure it closes the current Wintab context, opens up a new context with {\ttfamily {\bfseries OpenTestDigitizerContext()}}, creates a Wintab data object with {\ttfamily {\bfseries new CWintabData(m\_\-logContext)}}, which uses the context just created, and finally sets up a packet event handler for being notified when pen data comes in. Note that the call to {\ttfamily {\bfseries InitDataCapture()}} is made with ctrlSysCursor\_\-I = false, because we cannot be controlling the system cursor while scribbling.
+
+
+\begin{DoxyCode}
+    private void InitDataCapture(
+    int ctxHeight_I = m_TABEXTX, int ctxWidth_I = m_TABEXTY, bool ctrlSysCursor_I
+       = true)
+    {
+        try
+        {
+            // Close context from any previous test.
+            CloseCurrentContext();
+
+            m_logContext = OpenTestDigitizerContext(ctxWidth_I, ctxHeight_I,  ctr
+      lSysCursor_I);
+
+            if (m_logContext == null)
+            {
+                return;
+            }
+
+            // Create a data object and set its WT_PACKET handler.
+            m_wtData = new CWintabData(m_logContext);
+            m_wtData.SetWTPacketEventHandler(MyWTPacketEventHandler);
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.ToString());
+        }
+    }
+\end{DoxyCode}
+
+
+When creating the digitizer context, we start with getting the default context using {\ttfamily {\bfseries CWintabInfo.GetDefaultDigitizingContext(ECTXOptionValues.CXO\_\-MESSAGES)}}, which specifies that we want to receive Wintab messages to be notified of pen data. Since we are not specifying that we want to control the system cursor, the only other thing we have to override is the description of the logical extent of the tablet coordinates. For this example, we specify a logical tablet size of 10000 x 10000. That's pretty much it. We just tell \hyperlink{namespace_wintab_d_n}{WintabDN} to open this context using {\ttfamily {\bfseries logContext.Open()}}.
+
+
+\begin{DoxyCode}
+    private CWintabContext OpenTestDigitizerContext(
+        int width_I = m_TABEXTX, int height_I = m_TABEXTY, bool ctrlSysCursor = t
+      rue)
+    {
+        bool status = false;
+        CWintabContext logContext = null;
+
+        try
+        {
+            // Get the default digitizing context.
+            // Default is to receive data events.
+            logContext = CWintabInfo.GetDefaultDigitizingContext(
+      ECTXOptionValues.CXO_MESSAGES);
+
+            // Set system cursor if caller wants it.
+            if (ctrlSysCursor)
+            {
+                logContext.Options |= (uint)ECTXOptionValues.CXO_SYSTEM;
+            }
+
+            if (logContext == null)
+            {
+                return null;
+            }
+
+            // Modify the digitizing region.
+            logContext.Name = "WintabDN Event Data Context";
+
+            // output in a 10000 x 10000 grid
+            logContext.OutOrgX = logContext.OutOrgY = 0;
+            logContext.OutExtX = width_I;
+            logContext.OutExtY = height_I;
+
+
+            // Open the context, which will also tell Wintab to send data packets
+      .
+            status = logContext.Open();
+        }
+        catch (Exception ex)
+        {
+            TraceMsg("OpenTestDigitizerContext ERROR: " + ex.ToString());
+        }
+
+        return logContext;
+    }
+\end{DoxyCode}
+
+
+Finally, we show that the event handler can easily access the pen data using {\ttfamily {\bfseries m\_\-wtData.GetDataPacket(pktID)}}. The packet contains values for the X/Y position and pen normal pressure. The example also makes use of the packet timestamp, which helps determine whether to draw a line between points or just draw a rectangle at the point. This allows the drawn lines to be less choppy when the user moves the pen quickly.
+
+
+\begin{DoxyCode}
+    public void MyWTPacketEventHandler(Object sender_I, MessageReceivedEventArgs 
+      eventArgs_I)
+    {
+        try
+        {
+            if (m_maxPkts == 1)
+            {
+                uint pktID = (uint)eventArgs_I.Message.WParam;
+                WintabPacket pkt = m_wtData.GetDataPacket(pktID);
+
+                if (pkt.pkContext != 0)
+                {
+                    m_pkX = pkt.pkX;
+                    m_pkY = pkt.pkY;
+                    m_pressure = pkt.pkNormalPressure.pkAbsoluteNormalPressure;
+
+                    m_pkTime = pkt.pkTime;
+
+                    if (m_graphics != null)
+                    {
+                        // scribble mode
+                        int clientWidth = scribblePanel.Width;
+                        int clientHeight = scribblePanel.Height;
+
+                        int X = (int)((double)(m_pkX * clientWidth) / (double)m_T
+      ABEXTX);
+                        int Y = (int)((double)clientHeight - 
+                            ((double)(m_pkY * clientHeight) / (double)m_TABEXTY))
+      ;
+
+                        Point tabPoint = new Point(X, Y);
+
+                        if (m_lastPoint.Equals(Point.Empty))
+                        {
+                            m_lastPoint = tabPoint;
+                            m_pkTimeLast = m_pkTime;
+                        }
+
+                        m_pen.Width = (float)(m_pressure / 200);
+                        if (m_pressure > 0)
+                        {
+                            if (m_pkTime - m_pkTimeLast < 5)
+                            {
+                                m_graphics.DrawRectangle(m_pen, X, Y, 1, 1);
+                            }
+                            else
+                            {
+                                m_graphics.DrawLine(m_pen, tabPoint, m_lastPoint)
+      ;
+                            }
+                        }
+
+                        m_lastPoint = tabPoint;
+                        m_pkTimeLast = m_pkTime;
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("FAILED to get packet data: " + ex.ToString());
+        }
+    }
+\end{DoxyCode}
+\hypertarget{page2_testWTInfo_sec}{}\section{Testing CWintabInfo}\label{page2_testWTInfo_sec}
+The testing in this section is just a demonstration of the various CWintabDN.CWintabInfo properties.
+
+Here is one of the first calls an application might make to determine if Wintab is properly connected on the system: 
+\begin{DoxyCode}
+        bool isWintabAvailable = CWintabInfo.IsWintabAvailable();
+\end{DoxyCode}
+
+
+This is an example of how to find the number of tablet devices connected: 
+\begin{DoxyCode}
+        UInt32 numDevices = CWintabInfo.GetNumberOfDevices();
+\end{DoxyCode}
+
+
+Here is an example of how easy it is to get a default digitizing context (which is used in the \hyperlink{page2_scribbleDemo_sec}{Scribble Demo} example): 
+\begin{DoxyCode}
+        CWintabContext context = CWintabInfo.GetDefaultDigitizingContext();
+\end{DoxyCode}
+
+
+You can look through the other tests to see how some of the other global Wintab properties can be accessed.
+
+One of the tests, {\ttfamily {\bfseries Test\_\-GetDataPackets()}} gives a demonstration of capturing data packets and writing them out to the list. This demo is very similar to the \hyperlink{page2_scribbleDemo_sec}{Scribble Demo}, so we won't go into much detail here except to note that the call to {\ttfamily {\bfseries InitDataCapture()}} is made with {\ttfamily {\bfseries ctrlSysCursor\_\-I}} being true, so that the system cursor can be controlled with the pen. 

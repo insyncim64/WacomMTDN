@@ -1,0 +1,211 @@
+\hypertarget{class_wintab_d_n_1_1_c_wintab_data}{
+\section{WintabDN::CWintabData Class Reference}
+\label{class_wintab_d_n_1_1_c_wintab_data}\index{WintabDN::CWintabData@{WintabDN::CWintabData}}
+}
+
+
+Class to support capture and management of Wintab daa.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wintab_d_n_1_1_c_wintab_data_a8abbb19213719fa2f5fe36c045d73a10}{CWintabData} (\hyperlink{class_wintab_d_n_1_1_c_wintab_context}{CWintabContext} context\_\-I)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wintab_d_n_1_1_c_wintab_data}{CWintabData} constructor. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_wintab_d_n_1_1_c_wintab_data_abcaeaac268ef61208c49f26bc4332072}{SetWTPacketEventHandler} (EventHandler$<$ \hyperlink{class_wintab_d_n_1_1_message_received_event_args}{MessageReceivedEventArgs} $>$ handler\_\-I)
+\begin{DoxyCompactList}\small\item\em Set the handler to be called when WT\_\-PACKET events are received. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_wintab_d_n_1_1_c_wintab_data_aeb55a22dfe88fd4c1635f960122e0b68}{SetPacketQueueSize} (UInt32 numPkts\_\-I)
+\begin{DoxyCompactList}\small\item\em Set packet queue size for this data object's context. \item\end{DoxyCompactList}\item 
+UInt32 \hyperlink{class_wintab_d_n_1_1_c_wintab_data_a05814e1b584694cd63724c2ac5797ba7}{GetPacketQueueSize} ()
+\begin{DoxyCompactList}\small\item\em Get packet queue size for this data object's context. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_wintab_d_n_1_1_wintab_packet_ext}{WintabPacketExt} \hyperlink{class_wintab_d_n_1_1_c_wintab_data_a49ceefded068a333238b412a725afeff}{GetDataPacketExt} (UInt32 hCtx\_\-I, UInt32 pktID\_\-I)
+\begin{DoxyCompactList}\small\item\em Returns one packet of \hyperlink{struct_wintab_d_n_1_1_wintab_packet_ext}{WintabPacketExt} data from the packet queue. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_wintab_d_n_1_1_wintab_packet}{WintabPacket} \hyperlink{class_wintab_d_n_1_1_c_wintab_data_a3a4e0655e989c85debdff41b4d83d51b}{GetDataPacket} (UInt32 pktID\_\-I)
+\begin{DoxyCompactList}\small\item\em Returns one packet of \hyperlink{struct_wintab_d_n_1_1_wintab_packet}{WintabPacket} data from the packet queue. (Deprecated) \item\end{DoxyCompactList}\item 
+\hyperlink{struct_wintab_d_n_1_1_wintab_packet}{WintabPacket} \hyperlink{class_wintab_d_n_1_1_c_wintab_data_a465b6df3b3f753c362d91539ff5245f2}{GetDataPacket} (UInt32 hCtx\_\-I, UInt32 pktID\_\-I)
+\begin{DoxyCompactList}\small\item\em Returns one packet of Wintab data from the packet queue. \item\end{DoxyCompactList}\item 
+\hyperlink{struct_wintab_d_n_1_1_wintab_packet}{WintabPacket}\mbox{[}$\,$\mbox{]} \hyperlink{class_wintab_d_n_1_1_c_wintab_data_a9ea9c89a0ca7d408d6bb6da822b8be5e}{GetDataPackets} (UInt32 maxPkts\_\-I, bool remove\_\-I, ref UInt32 numPkts\_\-O)
+\begin{DoxyCompactList}\small\item\em Returns an array of Wintab data packets from the packet queue. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to support capture and management of Wintab daa. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_data_a8abbb19213719fa2f5fe36c045d73a10}{
+\index{WintabDN::CWintabData@{WintabDN::CWintabData}!CWintabData@{CWintabData}}
+\index{CWintabData@{CWintabData}!WintabDN::CWintabData@{WintabDN::CWintabData}}
+\subsubsection[{CWintabData}]{\setlength{\rightskip}{0pt plus 5cm}WintabDN::CWintabData::CWintabData (
+\begin{DoxyParamCaption}
+\item[{{\bf CWintabContext}}]{ context\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_data_a8abbb19213719fa2f5fe36c045d73a10}
+
+
+\hyperlink{class_wintab_d_n_1_1_c_wintab_data}{CWintabData} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context\_\-I} & logical context for this data object\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_data_a3a4e0655e989c85debdff41b4d83d51b}{
+\index{WintabDN::CWintabData@{WintabDN::CWintabData}!GetDataPacket@{GetDataPacket}}
+\index{GetDataPacket@{GetDataPacket}!WintabDN::CWintabData@{WintabDN::CWintabData}}
+\subsubsection[{GetDataPacket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WintabPacket} WintabDN::CWintabData::GetDataPacket (
+\begin{DoxyParamCaption}
+\item[{UInt32}]{ pktID\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_data_a3a4e0655e989c85debdff41b4d83d51b}
+
+
+Returns one packet of \hyperlink{struct_wintab_d_n_1_1_wintab_packet}{WintabPacket} data from the packet queue. (Deprecated) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pktID\_\-I} & Identifier for the tablet event packet to return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a data packet with non-\/null context if successful.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_data_a465b6df3b3f753c362d91539ff5245f2}{
+\index{WintabDN::CWintabData@{WintabDN::CWintabData}!GetDataPacket@{GetDataPacket}}
+\index{GetDataPacket@{GetDataPacket}!WintabDN::CWintabData@{WintabDN::CWintabData}}
+\subsubsection[{GetDataPacket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WintabPacket} WintabDN::CWintabData::GetDataPacket (
+\begin{DoxyParamCaption}
+\item[{UInt32}]{ hCtx\_\-I, }
+\item[{UInt32}]{ pktID\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_data_a465b6df3b3f753c362d91539ff5245f2}
+
+
+Returns one packet of Wintab data from the packet queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hCtx\_\-I} & Wintab context to be used when asking for the data\\
+\hline
+{\em pktID\_\-I} & Identifier for the tablet event packet to return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a data packet with non-\/null context if successful.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_data_a49ceefded068a333238b412a725afeff}{
+\index{WintabDN::CWintabData@{WintabDN::CWintabData}!GetDataPacketExt@{GetDataPacketExt}}
+\index{GetDataPacketExt@{GetDataPacketExt}!WintabDN::CWintabData@{WintabDN::CWintabData}}
+\subsubsection[{GetDataPacketExt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WintabPacketExt} WintabDN::CWintabData::GetDataPacketExt (
+\begin{DoxyParamCaption}
+\item[{UInt32}]{ hCtx\_\-I, }
+\item[{UInt32}]{ pktID\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_data_a49ceefded068a333238b412a725afeff}
+
+
+Returns one packet of \hyperlink{struct_wintab_d_n_1_1_wintab_packet_ext}{WintabPacketExt} data from the packet queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hCtx\_\-I} & Wintab context to be used when asking for the data\\
+\hline
+{\em pktID\_\-I} & Identifier for the tablet event packet to return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a data packet with non-\/null context if successful.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_data_a9ea9c89a0ca7d408d6bb6da822b8be5e}{
+\index{WintabDN::CWintabData@{WintabDN::CWintabData}!GetDataPackets@{GetDataPackets}}
+\index{GetDataPackets@{GetDataPackets}!WintabDN::CWintabData@{WintabDN::CWintabData}}
+\subsubsection[{GetDataPackets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WintabPacket} \mbox{[}$\,$\mbox{]} WintabDN::CWintabData::GetDataPackets (
+\begin{DoxyParamCaption}
+\item[{UInt32}]{ maxPkts\_\-I, }
+\item[{bool}]{ remove\_\-I, }
+\item[{ref UInt32}]{ numPkts\_\-O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_data_a9ea9c89a0ca7d408d6bb6da822b8be5e}
+
+
+Returns an array of Wintab data packets from the packet queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maxPkts\_\-I} & Specifies the maximum number of packets to return.\\
+\hline
+{\em remove\_\-I} & If true, returns data packets and removes them from the queue.\\
+\hline
+{\em numPkts\_\-O} & Number of packets actually returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the next maxPkts\_\-I from the list. Note that if remove\_\-I is false, then repeated calls will return the same packets. If remove\_\-I is true, then packets will be removed and subsequent calls will get different packets (if any).
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_data_a05814e1b584694cd63724c2ac5797ba7}{
+\index{WintabDN::CWintabData@{WintabDN::CWintabData}!GetPacketQueueSize@{GetPacketQueueSize}}
+\index{GetPacketQueueSize@{GetPacketQueueSize}!WintabDN::CWintabData@{WintabDN::CWintabData}}
+\subsubsection[{GetPacketQueueSize}]{\setlength{\rightskip}{0pt plus 5cm}UInt32 WintabDN::CWintabData::GetPacketQueueSize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_data_a05814e1b584694cd63724c2ac5797ba7}
+
+
+Get packet queue size for this data object's context. 
+
+\begin{DoxyReturn}{Returns}
+Returns a packet queue size in packets or 0 if fails
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_data_aeb55a22dfe88fd4c1635f960122e0b68}{
+\index{WintabDN::CWintabData@{WintabDN::CWintabData}!SetPacketQueueSize@{SetPacketQueueSize}}
+\index{SetPacketQueueSize@{SetPacketQueueSize}!WintabDN::CWintabData@{WintabDN::CWintabData}}
+\subsubsection[{SetPacketQueueSize}]{\setlength{\rightskip}{0pt plus 5cm}bool WintabDN::CWintabData::SetPacketQueueSize (
+\begin{DoxyParamCaption}
+\item[{UInt32}]{ numPkts\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_data_aeb55a22dfe88fd4c1635f960122e0b68}
+
+
+Set packet queue size for this data object's context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numPkts\_\-I} & desired packets in queue\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if operation successful
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_data_abcaeaac268ef61208c49f26bc4332072}{
+\index{WintabDN::CWintabData@{WintabDN::CWintabData}!SetWTPacketEventHandler@{SetWTPacketEventHandler}}
+\index{SetWTPacketEventHandler@{SetWTPacketEventHandler}!WintabDN::CWintabData@{WintabDN::CWintabData}}
+\subsubsection[{SetWTPacketEventHandler}]{\setlength{\rightskip}{0pt plus 5cm}void WintabDN::CWintabData::SetWTPacketEventHandler (
+\begin{DoxyParamCaption}
+\item[{EventHandler$<$ {\bf MessageReceivedEventArgs} $>$}]{ handler\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_data_abcaeaac268ef61208c49f26bc4332072}
+
+
+Set the handler to be called when WT\_\-PACKET events are received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler\_\-I} & WT\_\-PACKET event handler supplied by the client.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+WintabDN/CWintabData.cs\end{DoxyCompactItemize}

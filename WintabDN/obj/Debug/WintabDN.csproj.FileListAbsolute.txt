@@ -1,0 +1,5 @@
+C:\Users\insyncim64\Downloads\WintabDN\WintabDN\bin\Debug\WintabDN.dll
+C:\Users\insyncim64\Downloads\WintabDN\WintabDN\bin\Debug\WintabDN.pdb
+C:\Users\insyncim64\Downloads\WintabDN\WintabDN\obj\Debug\WintabDN.csprojResolveAssemblyReference.cache
+C:\Users\insyncim64\Downloads\WintabDN\WintabDN\obj\Debug\WintabDN.dll
+C:\Users\insyncim64\Downloads\WintabDN\WintabDN\obj\Debug\WintabDN.pdb

@@ -1,0 +1,464 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="page2.html"><param name="Name" value="A WintabDN example"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a9a94990f8c6f801fce835698b10b27f9"><param name="Name" value="AllocUnmanagedBuf"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html#a0f449ce8591349ff40a0aeda1acb406f"><param name="Name" value="axMax"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html#a03fc660c302fa514b40c5e74a6a4e277"><param name="Name" value="axMin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html#ae70c658765a04de55fe6f219cbd832f8"><param name="Name" value="axResolution"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html#a778377ddf52f8dc0aa483e6f942aeebc"><param name="Name" value="axUnits"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a79c3b4d587970e2282a6931494adba2e"><param name="Name" value="BtnDnMask"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a042b96b3c968d2f06eaa8f8d055852a5"><param name="Name" value="BtnUpMask"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#adb6ceb2d7f9cff8cca142b5285449b48"><param name="Name" value="Close"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a3af5bc46a6f7c1be248e7f34172f62eb"><param name="Name" value="controlIndex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a03d4b7c76028a930e958d052b35272b7"><param name="Name" value="ControlPropertyGet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a57902151c5bc1beee158adfd3710cd77"><param name="Name" value="ControlPropertySet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a70da8e34e56b80909906820679911b75"><param name="Name" value="ControlPropertySetImage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a6d2c70ab796b08b33362c0baabe33124"><param name="Name" value="CWintabContext"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a8abbb19213719fa2f5fe36c045d73a10"><param name="Name" value="CWintabData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_image_property.html#a691312d6e6b89ad18b127a61e5ba15b9"><param name="Name" value="data"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_image_property.html#a691312d6e6b89ad18b127a61e5ba15b9"><param name="Name" value="WintabDN::WTExtensionImageProperty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property.html#a020f8bb353cc6eeb111407e350941ec1"><param name="Name" value="WintabDN::WTExtensionProperty"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a900ebf0601173296d292c3b10728530d"><param name="Name" value="dataSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#add1f6cc256a7a0aac3cd6ebdeaf8168d"><param name="Name" value="Device"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#ae65d8671e9a0d79edb51ff47a55e52c4"><param name="Name" value="Enable"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_AXES"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_CURSORS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_DEFAULT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_DEFCONTEXT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_DEFSYSCTX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_DEVICES"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_MASK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_MAX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_NAME"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_SIZE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_TAG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_image_property.html#afbf79206281073fe55b19cd6e503f58a"><param name="Name" value="extBase"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_image_property.html#afbf79206281073fe55b19cd6e503f58a"><param name="Name" value="WintabDN::WTExtensionImageProperty"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property.html#ac179deb6ab648adbfd9836f7573dd4e7"><param name="Name" value="WintabDN::WTExtensionProperty"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#afccef5150c3899b2ce92ee7344cc685a"><param name="Name" value="FindWTExtensionIndex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a6acc474d09da4fb75e82ecfacb6bf051"><param name="Name" value="FreeUnmanagedBuf"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a0c4b63f73615120e7e234ae27b4482ee"><param name="Name" value="functionIndex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a3a4e0655e989c85debdff41b4d83d51b"><param name="Name" value="GetDataPacket"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a49ceefded068a333238b412a725afeff"><param name="Name" value="GetDataPacketExt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a9ea9c89a0ca7d408d6bb6da822b8be5e"><param name="Name" value="GetDataPackets"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a109ff387a12ad240dad3c2ad60324f3f"><param name="Name" value="GetDefaultDeviceIndex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a52434513444ad6db7e7e01ec6c771b88"><param name="Name" value="GetDefaultDigitizingContext"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a6b08041129180d63b1789246f93dca81"><param name="Name" value="GetDefaultSystemContext"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a1687c6cbe3c29af468bf1fab066f8704"><param name="Name" value="GetDeviceAxis"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#acf649a900e2cfa4f439b7f1b5d1a5f81"><param name="Name" value="GetDeviceInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a8a414dc0fe7133bf250a2fbfa04c3468"><param name="Name" value="GetDeviceOrientation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a76aad63fd705c6c98e7c285b1a0baf62"><param name="Name" value="GetDeviceRotation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a45400b395e3a38548dc8bb41579e4428"><param name="Name" value="GetMaxPressure"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#abdfe24f63d122351a52957cd6a52b05b"><param name="Name" value="GetNumberOfDevices"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a05814e1b584694cd63724c2ac5797ba7"><param name="Name" value="GetPacketQueueSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a3481ff407b550197dbcd9764b87043b2"><param name="Name" value="GetStylusName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#ad6baf2c8073255192c3db7f2a63790b8"><param name="Name" value="GetTabletAxis"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="page1.html"><param name="Name" value="Getting Started"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a341efefa1ea2122f128582744ca0a72d"><param name="Name" value="GetWTExtensionMask"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a94553614e6d802faa0133eee5fba4139"><param name="Name" value="HCtx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a4617fa32c1cfde4a434adb410d5fa20f"><param name="Name" value="InExtX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a98483a97a67cf1c9ddf42ba0d3344830"><param name="Name" value="InExtY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a69434687517c9e50421ea2be7dcb7c7e"><param name="Name" value="InExtZ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a29428a202facd739a6752b7dbd1ef9c2"><param name="Name" value="InOrgX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#ac8a0697447e7560bae747c396f27e73f"><param name="Name" value="InOrgY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a8ea45c9e123a684c7fc6141f9709a03d"><param name="Name" value="InOrgZ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a239c82a9dfc1be06f7cd8487ff0f60f0"><param name="Name" value="IsStylusActive"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#ab8bd2f68a94355ffecd3de6519b186e6"><param name="Name" value="IsWintabAvailable"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a187da57874b1c4508be2ab344f7b0ea4"><param name="Name" value="Locks"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7d64da6a0f08eeb371ef4dac5e9f0077"><param name="Name" value="LogContext"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a204ffdb085e7ee90905c928110fe81d8"><param name="Name" value="MarshalDataExtPackets"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a04f7fa53ebe1453681b38ef4fab704bc"><param name="Name" value="MarshalDataPackets"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a462ef67a6a4e5fa8fe59bf37dc8b4b53"><param name="Name" value="MarshalUnmanagedBuf< T >"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a3b02b432d185777360f1501b42df7afa"><param name="Name" value="MarshalUnmanagedString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_message_received_event_args.html#a5096f55c5575763d1738d07321ef0b67"><param name="Name" value="Message"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_message_received_event_args.html#a6ed1e31bfff899ab3fbe4d843f6ac8c3"><param name="Name" value="MessageReceivedEventArgs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#af330693f2499261616e121c7604bac78"><param name="Name" value="MoveMask"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a9e0f2a0125c0f72f8d42f255eed799d9"><param name="Name" value="MsgBase"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7a6350862c15ab27db4d465d3d70d71a"><param name="Name" value="Name"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html#a6cb92705951cd2986eb41a839d6a4262"><param name="Name" value="nContext"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#a3517d9dde32f64a3a936a2f4f0ae8fad"><param name="Name" value="nControl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#a3517d9dde32f64a3a936a2f4f0ae8fad"><param name="Name" value="WintabDN::WTExpKeyData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#a6e9b0e2000225460c886bcd723ae2513"><param name="Name" value="WintabDN::WTSliderData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#ab77b69daf1ad64f5e70349072f10ec3a"><param name="Name" value="nLocation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#ae53b13eec56536783d9ce573edb39ceb"><param name="Name" value="nMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#a3dd27592829cec27d5e117a192a0747a"><param name="Name" value="nPosition"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#af8ece8d7a372d170113016896b92b0fd"><param name="Name" value="nReserved"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#af8ece8d7a372d170113016896b92b0fd"><param name="Name" value="WintabDN::WTExpKeyData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#a583272c2d4a1a737305fc47ba02b31c1"><param name="Name" value="WintabDN::WTSliderData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html#acf18c03020a46eaec34c90454849b710"><param name="Name" value="nSerialNumber"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#a2be90aaa315c0aa994448b83fb0136f9"><param name="Name" value="nState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html#aab3d8aef441f40cf947ee5dd34e9b15b"><param name="Name" value="nStatus"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#ae3e24d2799a9ea087dd008a29f298b10"><param name="Name" value="nTablet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#ae3e24d2799a9ea087dd008a29f298b10"><param name="Name" value="WintabDN::WTExpKeyData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#ad7d873006c2202ed8cf64372156480e5"><param name="Name" value="WintabDN::WTSliderData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html#aff83fb6aa04f9b5938c0a76fe25ca653"><param name="Name" value="nTime"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7d2c0ca2335288efd6a4d08d5a88ee93"><param name="Name" value="Open"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#abe5e141b4c07ad5a52ed4fb47479af7a"><param name="Name" value="Options"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_orientation.html#a94182c4f6543a31161e16b2a684b954f"><param name="Name" value="orAltitude"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_orientation.html#ae280f0ee6efa5399950862eb02710cb2"><param name="Name" value="orAzimuth"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_orientation.html#a685f37c134a39e615770809ab6706555"><param name="Name" value="orTwist"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a55c2bd2bf147d521c43f5eff28674cd5"><param name="Name" value="OutExtX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a2c6260f026f198fb05b9ff421bed158b"><param name="Name" value="OutExtY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a43c662cb2050c4a8f9cd0378fffd91e9"><param name="Name" value="OutExtZ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a15ccc1a63dd18dcca3518d770dbade1c"><param name="Name" value="OutOrgX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#ae59a99d957925924554d483a4eb386d0"><param name="Name" value="OutOrgY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a9d4a0230b1d39404c34d24323f994796"><param name="Name" value="OutOrgZ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_normal_pressure.html#a0b873c318b3fc8e62b107a9626e3537f"><param name="Name" value="pkAbsoluteNormalPressure"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_tangent_pressure.html#a22b098780487d0d3f81d7630a38bbc09"><param name="Name" value="pkAbsoluteTangentPressure"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html#a8994260741db2010095537bd4326e9aa"><param name="Name" value="pkBase"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a069d68ce089ae275eb30fd4b2746ad97"><param name="Name" value="pkButtons"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a5a6a3eaeed23e1898551cb42267a7167"><param name="Name" value="pkChanged"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a8e32af4bfcc46357c69ac501b756ac38"><param name="Name" value="pkContext"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#afb9d197243879d81f43b1aaa482507ef"><param name="Name" value="pkCursor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html#aedaaaf53b6fec81efc083188010e2a9b"><param name="Name" value="pkExpKey"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a4a3d1c8e15c8ea7c933a3819608ec102"><param name="Name" value="pkNormalPressure"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a75a992e71d4c430f5eb5211e19ca1b32"><param name="Name" value="pkOrientation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_normal_pressure.html#af0352f6fd2b6c25b19ce82083f698436"><param name="Name" value="pkRelativeNormalPressure"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_tangent_pressure.html#a288b2232530d1fba63a412d6aa724b86"><param name="Name" value="pkRelativeTangentPressure"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a8a5d64f55e6bfb5ec4d73c842b307876"><param name="Name" value="pkRotation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a10550807dd2a1cd432c2ff3c271bd3ea"><param name="Name" value="pkSerialNumber"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a2f16f395c9f61bd40038a1029ec62912"><param name="Name" value="pkStatus"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a182789bf6e328c9ae904daa31ccade5f"><param name="Name" value="pkTangentPressure"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a39ecf79368b666bcd96679d77a997e6d"><param name="Name" value="PktData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a4e655a9a5378d55d47a3e275e4e68093"><param name="Name" value="pkTime"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#ae49db54fc9d1569c95a902058c85dd3f"><param name="Name" value="PktMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html#ad0e35127b3d018e8e430644b086a0e68"><param name="Name" value="pkTouchRing"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html#a55c86bdd1cd442ecba1b61ccc1d4dfe8"><param name="Name" value="pkTouchStrip"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a43dd191d974dedc6ca70e59ebe209ddb"><param name="Name" value="PktRate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#aa0986c51cb8c47d6eeaf1d0ec81335d0"><param name="Name" value="pkX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#ab3bd9cbd554397abd270d9c40fc1f34e"><param name="Name" value="pkY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#ac5525a22d05a0a38e4522d9abbd91bb2"><param name="Name" value="pkZ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="page3.html"><param name="Name" value="Primary WintabDN Classes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a01f5a7c7a3aecada5a4c9d6ab2b63a8e"><param name="Name" value="propertyID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#ad91637900f8dcafba84a476539748dfd"><param name="Name" value="reserved"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_rotation.html#adf52078b27785a5bcaf3f7b1ae1ebd09"><param name="Name" value="rotPitch"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_rotation.html#a4d9c8754968c56887219363857ab8afb"><param name="Name" value="rotRoll"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_rotation.html#a4798ee04e0f69f0038ac76c04002b350"><param name="Name" value="rotYaw"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a07809637575a3df05e712040c0a3c724"><param name="Name" value="SensX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#aa50f638174c4d1391705f2886f37c014"><param name="Name" value="SensY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7ff3ee5c5c7085f2f92235fffffa3cd8"><param name="Name" value="SensZ"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a2cf52c3a3471e4a5163dfc23d3749523"><param name="Name" value="SetDisplayProperty"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a5aafd039d3811a4e3c6452334a6955ab"><param name="Name" value="SetOverlapOrder"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#aeb55a22dfe88fd4c1635f960122e0b68"><param name="Name" value="SetPacketQueueSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#abcaeaac268ef61208c49f26bc4332072"><param name="Name" value="SetWTPacketEventHandler"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a438ab3e5e62042fd6aa2f57cee4509c6"><param name="Name" value="Status"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a787e9ded767494fef4fd2647fe4842dd"><param name="Name" value="SysExtX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a832a9049ba42d0728ce72c5af9786781"><param name="Name" value="SysExtY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7db3d4d62f8480bf6a3ed14eadd2d818"><param name="Name" value="SysMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a16fbcf8a36f27eff242c53ecb94a70b7"><param name="Name" value="SysOrgX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a165bbb382ea203f3cfde4e07ea9d9f5c"><param name="Name" value="SysOrgY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a86103ce6d5340f20399bebf09b542a76"><param name="Name" value="SysSensX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a426735ad2514eb9f0fe7470051288b28"><param name="Name" value="SysSensY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_AVAILABLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_CONTROLCOUNT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_FUNCCOUNT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_ICON_FORMAT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_ICON_HEIGHT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_ICON_WIDTH"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_LOCATION"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_MAX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_MIN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_OVERRIDE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_OVERRIDE_ICON"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_OVERRIDE_NAME"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#acc18cec8a354e50809557a5cdfd017dc"><param name="Name" value="tabletIndex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a0829e0e054dd601b4f043415c0090c31"><param name="Name" value="TBN_DOWN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a0829e0e054dd601b4f043415c0090c31"><param name="Name" value="TBN_NONE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a0829e0e054dd601b4f043415c0090c31"><param name="Name" value="TBN_UP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_GRAB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_INVERT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_MARGIN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_PROXIMITY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_QUEUE_ERR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a3878c5d6db8c4e005e38f554f18ad267"><param name="Name" value="version"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html"><param name="Name" value="WintabDN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html"><param name="Name" value="WintabDN::CMemUtils"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a9a94990f8c6f801fce835698b10b27f9"><param name="Name" value="AllocUnmanagedBuf"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a6acc474d09da4fb75e82ecfacb6bf051"><param name="Name" value="FreeUnmanagedBuf"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a204ffdb085e7ee90905c928110fe81d8"><param name="Name" value="MarshalDataExtPackets"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a04f7fa53ebe1453681b38ef4fab704bc"><param name="Name" value="MarshalDataPackets"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a462ef67a6a4e5fa8fe59bf37dc8b4b53"><param name="Name" value="MarshalUnmanagedBuf< T >"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html#a3b02b432d185777360f1501b42df7afa"><param name="Name" value="MarshalUnmanagedString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html"><param name="Name" value="WintabDN::CWintabContext"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a79c3b4d587970e2282a6931494adba2e"><param name="Name" value="BtnDnMask"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a042b96b3c968d2f06eaa8f8d055852a5"><param name="Name" value="BtnUpMask"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#adb6ceb2d7f9cff8cca142b5285449b48"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a6d2c70ab796b08b33362c0baabe33124"><param name="Name" value="CWintabContext"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#add1f6cc256a7a0aac3cd6ebdeaf8168d"><param name="Name" value="Device"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#ae65d8671e9a0d79edb51ff47a55e52c4"><param name="Name" value="Enable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a94553614e6d802faa0133eee5fba4139"><param name="Name" value="HCtx"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a4617fa32c1cfde4a434adb410d5fa20f"><param name="Name" value="InExtX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a98483a97a67cf1c9ddf42ba0d3344830"><param name="Name" value="InExtY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a69434687517c9e50421ea2be7dcb7c7e"><param name="Name" value="InExtZ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a29428a202facd739a6752b7dbd1ef9c2"><param name="Name" value="InOrgX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#ac8a0697447e7560bae747c396f27e73f"><param name="Name" value="InOrgY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a8ea45c9e123a684c7fc6141f9709a03d"><param name="Name" value="InOrgZ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a187da57874b1c4508be2ab344f7b0ea4"><param name="Name" value="Locks"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7d64da6a0f08eeb371ef4dac5e9f0077"><param name="Name" value="LogContext"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#af330693f2499261616e121c7604bac78"><param name="Name" value="MoveMask"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a9e0f2a0125c0f72f8d42f255eed799d9"><param name="Name" value="MsgBase"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7a6350862c15ab27db4d465d3d70d71a"><param name="Name" value="Name"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7d2c0ca2335288efd6a4d08d5a88ee93"><param name="Name" value="Open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#abe5e141b4c07ad5a52ed4fb47479af7a"><param name="Name" value="Options"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a55c2bd2bf147d521c43f5eff28674cd5"><param name="Name" value="OutExtX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a2c6260f026f198fb05b9ff421bed158b"><param name="Name" value="OutExtY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a43c662cb2050c4a8f9cd0378fffd91e9"><param name="Name" value="OutExtZ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a15ccc1a63dd18dcca3518d770dbade1c"><param name="Name" value="OutOrgX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#ae59a99d957925924554d483a4eb386d0"><param name="Name" value="OutOrgY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a9d4a0230b1d39404c34d24323f994796"><param name="Name" value="OutOrgZ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a39ecf79368b666bcd96679d77a997e6d"><param name="Name" value="PktData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#ae49db54fc9d1569c95a902058c85dd3f"><param name="Name" value="PktMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a43dd191d974dedc6ca70e59ebe209ddb"><param name="Name" value="PktRate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a07809637575a3df05e712040c0a3c724"><param name="Name" value="SensX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#aa50f638174c4d1391705f2886f37c014"><param name="Name" value="SensY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7ff3ee5c5c7085f2f92235fffffa3cd8"><param name="Name" value="SensZ"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a5aafd039d3811a4e3c6452334a6955ab"><param name="Name" value="SetOverlapOrder"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a438ab3e5e62042fd6aa2f57cee4509c6"><param name="Name" value="Status"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a787e9ded767494fef4fd2647fe4842dd"><param name="Name" value="SysExtX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a832a9049ba42d0728ce72c5af9786781"><param name="Name" value="SysExtY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a7db3d4d62f8480bf6a3ed14eadd2d818"><param name="Name" value="SysMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a16fbcf8a36f27eff242c53ecb94a70b7"><param name="Name" value="SysOrgX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a165bbb382ea203f3cfde4e07ea9d9f5c"><param name="Name" value="SysOrgY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a86103ce6d5340f20399bebf09b542a76"><param name="Name" value="SysSensX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html#a426735ad2514eb9f0fe7470051288b28"><param name="Name" value="SysSensY"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html"><param name="Name" value="WintabDN::CWintabData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a8abbb19213719fa2f5fe36c045d73a10"><param name="Name" value="CWintabData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a3a4e0655e989c85debdff41b4d83d51b"><param name="Name" value="GetDataPacket"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a49ceefded068a333238b412a725afeff"><param name="Name" value="GetDataPacketExt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a9ea9c89a0ca7d408d6bb6da822b8be5e"><param name="Name" value="GetDataPackets"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#a05814e1b584694cd63724c2ac5797ba7"><param name="Name" value="GetPacketQueueSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#aeb55a22dfe88fd4c1635f960122e0b68"><param name="Name" value="SetPacketQueueSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html#abcaeaac268ef61208c49f26bc4332072"><param name="Name" value="SetWTPacketEventHandler"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html"><param name="Name" value="WintabDN::CWintabExtensions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a03d4b7c76028a930e958d052b35272b7"><param name="Name" value="ControlPropertyGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a57902151c5bc1beee158adfd3710cd77"><param name="Name" value="ControlPropertySet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a70da8e34e56b80909906820679911b75"><param name="Name" value="ControlPropertySetImage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#afccef5150c3899b2ce92ee7344cc685a"><param name="Name" value="FindWTExtensionIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a341efefa1ea2122f128582744ca0a72d"><param name="Name" value="GetWTExtensionMask"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html#a2cf52c3a3471e4a5163dfc23d3749523"><param name="Name" value="SetDisplayProperty"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html"><param name="Name" value="WintabDN::CWintabFuncs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#af86aa97fc2ba0deb549d069bba7a29c7"><param name="Name" value="WTClose"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a63cd6d8f13c3c19bd8b30567e02829ac"><param name="Name" value="WTDataGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ad9c542ad221c675184a066a688ab7e84"><param name="Name" value="WTDataPeek"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ac95222347f25482ef10ec9619881c4d6"><param name="Name" value="WTEnable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a83cfeb6f7c4c5e69093a1f475b68d526"><param name="Name" value="WTExtGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ac8b331b5c83320742c6e222cf24e56de"><param name="Name" value="WTExtSet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a2ec8c8377a44ea036a5c7fe7c365cf95"><param name="Name" value="WTInfoA"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a81266ff31a9a8f8091c3b84a10fec0ca"><param name="Name" value="WTOpenA"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a2ff68c48cdfa2b610e95e2088073fdb5"><param name="Name" value="WTOverlap"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ae48b913853eadb05992c1d6688c9825d"><param name="Name" value="WTPacket"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ade1a359871fe9dd02ec2f3dd593cf7fa"><param name="Name" value="WTPacketsGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a3b797a5a70f68096c43b7d0e8088c4c3"><param name="Name" value="WTQueuePacketsEx"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a87f5573c610b759ad6da04d1dd20f8c3"><param name="Name" value="WTQueueSizeGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a3dce149610861d43038221c8be3c2262"><param name="Name" value="WTQueueSizeSet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html"><param name="Name" value="WintabDN::CWintabInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a109ff387a12ad240dad3c2ad60324f3f"><param name="Name" value="GetDefaultDeviceIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a52434513444ad6db7e7e01ec6c771b88"><param name="Name" value="GetDefaultDigitizingContext"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a6b08041129180d63b1789246f93dca81"><param name="Name" value="GetDefaultSystemContext"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a1687c6cbe3c29af468bf1fab066f8704"><param name="Name" value="GetDeviceAxis"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#acf649a900e2cfa4f439b7f1b5d1a5f81"><param name="Name" value="GetDeviceInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a8a414dc0fe7133bf250a2fbfa04c3468"><param name="Name" value="GetDeviceOrientation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a76aad63fd705c6c98e7c285b1a0baf62"><param name="Name" value="GetDeviceRotation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a45400b395e3a38548dc8bb41579e4428"><param name="Name" value="GetMaxPressure"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#abdfe24f63d122351a52957cd6a52b05b"><param name="Name" value="GetNumberOfDevices"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a3481ff407b550197dbcd9764b87043b2"><param name="Name" value="GetStylusName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#ad6baf2c8073255192c3db7f2a63790b8"><param name="Name" value="GetTabletAxis"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#a239c82a9dfc1be06f7cd8487ff0f60f0"><param name="Name" value="IsStylusActive"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html#ab8bd2f68a94355ffecd3de6519b186e6"><param name="Name" value="IsWintabAvailable"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_f_i_x32.html"><param name="Name" value="WintabDN::FIX32"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_h_c_t_x.html"><param name="Name" value="WintabDN::HCTX"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_h_w_n_d.html"><param name="Name" value="WintabDN::HWND"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_message_received_event_args.html"><param name="Name" value="WintabDN::MessageReceivedEventArgs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_message_received_event_args.html#a5096f55c5575763d1738d07321ef0b67"><param name="Name" value="Message"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_message_received_event_args.html#a6ed1e31bfff899ab3fbe4d843f6ac8c3"><param name="Name" value="MessageReceivedEventArgs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html"><param name="Name" value="WintabDN::WintabAxis"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html#a0f449ce8591349ff40a0aeda1acb406f"><param name="Name" value="axMax"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html#a03fc660c302fa514b40c5e74a6a4e277"><param name="Name" value="axMin"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html#ae70c658765a04de55fe6f219cbd832f8"><param name="Name" value="axResolution"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html#a778377ddf52f8dc0aa483e6f942aeebc"><param name="Name" value="axUnits"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis_array.html"><param name="Name" value="WintabDN::WintabAxisArray"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_log_context.html"><param name="Name" value="WintabDN::WintabLogContext"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html"><param name="Name" value="WintabDN::WintabPacket"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a069d68ce089ae275eb30fd4b2746ad97"><param name="Name" value="pkButtons"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a5a6a3eaeed23e1898551cb42267a7167"><param name="Name" value="pkChanged"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a8e32af4bfcc46357c69ac501b756ac38"><param name="Name" value="pkContext"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#afb9d197243879d81f43b1aaa482507ef"><param name="Name" value="pkCursor"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a4a3d1c8e15c8ea7c933a3819608ec102"><param name="Name" value="pkNormalPressure"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a75a992e71d4c430f5eb5211e19ca1b32"><param name="Name" value="pkOrientation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a8a5d64f55e6bfb5ec4d73c842b307876"><param name="Name" value="pkRotation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a10550807dd2a1cd432c2ff3c271bd3ea"><param name="Name" value="pkSerialNumber"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a2f16f395c9f61bd40038a1029ec62912"><param name="Name" value="pkStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a182789bf6e328c9ae904daa31ccade5f"><param name="Name" value="pkTangentPressure"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#a4e655a9a5378d55d47a3e275e4e68093"><param name="Name" value="pkTime"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#aa0986c51cb8c47d6eeaf1d0ec81335d0"><param name="Name" value="pkX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#ab3bd9cbd554397abd270d9c40fc1f34e"><param name="Name" value="pkY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html#ac5525a22d05a0a38e4522d9abbd91bb2"><param name="Name" value="pkZ"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html"><param name="Name" value="WintabDN::WintabPacketExt"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html#a8994260741db2010095537bd4326e9aa"><param name="Name" value="pkBase"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html#aedaaaf53b6fec81efc083188010e2a9b"><param name="Name" value="pkExpKey"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html#ad0e35127b3d018e8e430644b086a0e68"><param name="Name" value="pkTouchRing"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html#a55c86bdd1cd442ecba1b61ccc1d4dfe8"><param name="Name" value="pkTouchStrip"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html"><param name="Name" value="WintabDN::WTExpKeyData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#a3517d9dde32f64a3a936a2f4f0ae8fad"><param name="Name" value="nControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#ab77b69daf1ad64f5e70349072f10ec3a"><param name="Name" value="nLocation"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#af8ece8d7a372d170113016896b92b0fd"><param name="Name" value="nReserved"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#a2be90aaa315c0aa994448b83fb0136f9"><param name="Name" value="nState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html#ae3e24d2799a9ea087dd008a29f298b10"><param name="Name" value="nTablet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html"><param name="Name" value="WintabDN::WTExtensionBase"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html#a6cb92705951cd2986eb41a839d6a4262"><param name="Name" value="nContext"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html#acf18c03020a46eaec34c90454849b710"><param name="Name" value="nSerialNumber"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html#aab3d8aef441f40cf947ee5dd34e9b15b"><param name="Name" value="nStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html#aff83fb6aa04f9b5938c0a76fe25ca653"><param name="Name" value="nTime"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_image_property.html"><param name="Name" value="WintabDN::WTExtensionImageProperty"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_image_property.html#a691312d6e6b89ad18b127a61e5ba15b9"><param name="Name" value="data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_image_property.html#afbf79206281073fe55b19cd6e503f58a"><param name="Name" value="extBase"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property.html"><param name="Name" value="WintabDN::WTExtensionProperty"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property.html#a020f8bb353cc6eeb111407e350941ec1"><param name="Name" value="data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property.html#ac179deb6ab648adbfd9836f7573dd4e7"><param name="Name" value="extBase"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html"><param name="Name" value="WintabDN::WTExtensionPropertyBase"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a3af5bc46a6f7c1be248e7f34172f62eb"><param name="Name" value="controlIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a900ebf0601173296d292c3b10728530d"><param name="Name" value="dataSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a0c4b63f73615120e7e234ae27b4482ee"><param name="Name" value="functionIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a01f5a7c7a3aecada5a4c9d6ab2b63a8e"><param name="Name" value="propertyID"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#ad91637900f8dcafba84a476539748dfd"><param name="Name" value="reserved"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#acc18cec8a354e50809557a5cdfd017dc"><param name="Name" value="tabletIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html#a3878c5d6db8c4e005e38f554f18ad267"><param name="Name" value="version"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_w_t_extensions_global.html"><param name="Name" value="WintabDN::WTExtensionsGlobal"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_w_t_extensions_global.html#a8cbc06e85a507f2a7e2f3d3f7662c437"><param name="Name" value="WTExtensionPropertyImageMaxDataBytes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_w_t_extensions_global.html#ab6504308c6eb61fbed5e1772a9a59197"><param name="Name" value="WTExtensionPropertyMaxDataBytes"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_normal_pressure.html"><param name="Name" value="WintabDN::WTNormalPressure"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_normal_pressure.html#a0b873c318b3fc8e62b107a9626e3537f"><param name="Name" value="pkAbsoluteNormalPressure"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_normal_pressure.html#af0352f6fd2b6c25b19ce82083f698436"><param name="Name" value="pkRelativeNormalPressure"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_orientation.html"><param name="Name" value="WintabDN::WTOrientation"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_orientation.html#a94182c4f6543a31161e16b2a684b954f"><param name="Name" value="orAltitude"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_orientation.html#ae280f0ee6efa5399950862eb02710cb2"><param name="Name" value="orAzimuth"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_orientation.html#a685f37c134a39e615770809ab6706555"><param name="Name" value="orTwist"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_w_t_p_k_t.html"><param name="Name" value="WintabDN::WTPKT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_rotation.html"><param name="Name" value="WintabDN::WTRotation"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_rotation.html#adf52078b27785a5bcaf3f7b1ae1ebd09"><param name="Name" value="rotPitch"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_rotation.html#a4d9c8754968c56887219363857ab8afb"><param name="Name" value="rotRoll"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_rotation.html#a4798ee04e0f69f0038ac76c04002b350"><param name="Name" value="rotYaw"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html"><param name="Name" value="WintabDN::WTSliderData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#a6e9b0e2000225460c886bcd723ae2513"><param name="Name" value="nControl"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#ae53b13eec56536783d9ce573edb39ceb"><param name="Name" value="nMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#a3dd27592829cec27d5e117a192a0747a"><param name="Name" value="nPosition"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#a583272c2d4a1a737305fc47ba02b31c1"><param name="Name" value="nReserved"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html#ad7d873006c2202ed8cf64372156480e5"><param name="Name" value="nTablet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_tangent_pressure.html"><param name="Name" value="WintabDN::WTTangentPressure"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_tangent_pressure.html#a22b098780487d0d3f81d7630a38bbc09"><param name="Name" value="pkAbsoluteTangentPressure"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_wintab_d_n_1_1_w_t_tangent_pressure.html#a288b2232530d1fba63a412d6aa724b86"><param name="Name" value="pkRelativeTangentPressure"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html"><param name="Name" value="WintabDN"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_AXES"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_CURSORS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_DEFAULT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_DEFCONTEXT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_DEFSYSCTX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_DEVICES"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_MASK"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_MAX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_NAME"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_SIZE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a52875c234488913934e0d49ac13c438d"><param name="Name" value="EXT_TAG"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_AVAILABLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_CONTROLCOUNT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_FUNCCOUNT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_ICON_FORMAT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_ICON_HEIGHT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_ICON_WIDTH"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_LOCATION"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_MAX"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_MIN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_OVERRIDE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_OVERRIDE_ICON"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a21cb408997e6cbe0866e75b0fe0a743f"><param name="Name" value="TABLET_PROPERTY_OVERRIDE_NAME"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a0829e0e054dd601b4f043415c0090c31"><param name="Name" value="TBN_DOWN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a0829e0e054dd601b4f043415c0090c31"><param name="Name" value="TBN_NONE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a0829e0e054dd601b4f043415c0090c31"><param name="Name" value="TBN_UP"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_GRAB"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_INVERT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_MARGIN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_PROXIMITY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#afe14d17b83fb34685a298d857c203cac"><param name="Name" value="TPS_QUEUE_ERR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a303ef868b8887dc43872ddac8a7d059b"><param name="Name" value="WTX_EXPKEYS2"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a303ef868b8887dc43872ddac8a7d059b"><param name="Name" value="WTX_TOUCHRING"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a303ef868b8887dc43872ddac8a7d059b"><param name="Name" value="WTX_TOUCHSTRIP"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#af86aa97fc2ba0deb549d069bba7a29c7"><param name="Name" value="WTClose"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a63cd6d8f13c3c19bd8b30567e02829ac"><param name="Name" value="WTDataGet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ad9c542ad221c675184a066a688ab7e84"><param name="Name" value="WTDataPeek"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ac95222347f25482ef10ec9619881c4d6"><param name="Name" value="WTEnable"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_w_t_extensions_global.html#a8cbc06e85a507f2a7e2f3d3f7662c437"><param name="Name" value="WTExtensionPropertyImageMaxDataBytes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_w_t_extensions_global.html#ab6504308c6eb61fbed5e1772a9a59197"><param name="Name" value="WTExtensionPropertyMaxDataBytes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a83cfeb6f7c4c5e69093a1f475b68d526"><param name="Name" value="WTExtGet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ac8b331b5c83320742c6e222cf24e56de"><param name="Name" value="WTExtSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a2ec8c8377a44ea036a5c7fe7c365cf95"><param name="Name" value="WTInfoA"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a81266ff31a9a8f8091c3b84a10fec0ca"><param name="Name" value="WTOpenA"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a2ff68c48cdfa2b610e95e2088073fdb5"><param name="Name" value="WTOverlap"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ae48b913853eadb05992c1d6688c9825d"><param name="Name" value="WTPacket"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#ade1a359871fe9dd02ec2f3dd593cf7fa"><param name="Name" value="WTPacketsGet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a3b797a5a70f68096c43b7d0e8088c4c3"><param name="Name" value="WTQueuePacketsEx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a87f5573c610b759ad6da04d1dd20f8c3"><param name="Name" value="WTQueueSizeGet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html#a3dce149610861d43038221c8be3c2262"><param name="Name" value="WTQueueSizeSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a303ef868b8887dc43872ddac8a7d059b"><param name="Name" value="WTX_EXPKEYS2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a303ef868b8887dc43872ddac8a7d059b"><param name="Name" value="WTX_TOUCHRING"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_wintab_d_n.html#a303ef868b8887dc43872ddac8a7d059b"><param name="Name" value="WTX_TOUCHSTRIP"></OBJECT>
+</UL>
+</BODY>
+</HTML>

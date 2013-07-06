@@ -1,0 +1,290 @@
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info}{
+\section{WintabDN::CWintabInfo Class Reference}
+\label{class_wintab_d_n_1_1_c_wintab_info}\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+}
+
+
+Class to access Wintab interface data.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_info_ab8bd2f68a94355ffecd3de6519b186e6}{IsWintabAvailable} ()
+\begin{DoxyCompactList}\small\item\em Returns TRUE if Wintab service is running and responsive. \item\end{DoxyCompactList}\item 
+static String \hyperlink{class_wintab_d_n_1_1_c_wintab_info_acf649a900e2cfa4f439b7f1b5d1a5f81}{GetDeviceInfo} ()
+\begin{DoxyCompactList}\small\item\em Returns a string containing device name. \item\end{DoxyCompactList}\item 
+static \hyperlink{class_wintab_d_n_1_1_c_wintab_context}{CWintabContext} \hyperlink{class_wintab_d_n_1_1_c_wintab_info_a52434513444ad6db7e7e01ec6c771b88}{GetDefaultDigitizingContext} (\hyperlink{namespace_wintab_d_n_a701e8021b6889039ed562596a2d1bdd2}{ECTXOptionValues} options\_\-I=0)
+\begin{DoxyCompactList}\small\item\em Returns the default digitizing context, with useful context overrides. \item\end{DoxyCompactList}\item 
+static \hyperlink{class_wintab_d_n_1_1_c_wintab_context}{CWintabContext} \hyperlink{class_wintab_d_n_1_1_c_wintab_info_a6b08041129180d63b1789246f93dca81}{GetDefaultSystemContext} (\hyperlink{namespace_wintab_d_n_a701e8021b6889039ed562596a2d1bdd2}{ECTXOptionValues} options\_\-I=0)
+\begin{DoxyCompactList}\small\item\em Returns the default system context, with useful context overrides. \item\end{DoxyCompactList}\item 
+static Int32 \hyperlink{class_wintab_d_n_1_1_c_wintab_info_a109ff387a12ad240dad3c2ad60324f3f}{GetDefaultDeviceIndex} ()
+\begin{DoxyCompactList}\small\item\em Returns the default device. If this value is -\/1, then it also known as a \char`\"{}virtual device\char`\"{}. \item\end{DoxyCompactList}\item 
+static \hyperlink{struct_wintab_d_n_1_1_wintab_axis}{WintabAxis} \hyperlink{class_wintab_d_n_1_1_c_wintab_info_a1687c6cbe3c29af468bf1fab066f8704}{GetDeviceAxis} (Int32 devIndex\_\-I, \hyperlink{namespace_wintab_d_n_a38705aa38c49c04846399172fa9fd1cd}{EAxisDimension} dim\_\-I)
+\begin{DoxyCompactList}\small\item\em Returns the \hyperlink{struct_wintab_d_n_1_1_wintab_axis}{WintabAxis} object for specified device and dimension. \item\end{DoxyCompactList}\item 
+static \hyperlink{struct_wintab_d_n_1_1_wintab_axis_array}{WintabAxisArray} \hyperlink{class_wintab_d_n_1_1_c_wintab_info_a8a414dc0fe7133bf250a2fbfa04c3468}{GetDeviceOrientation} (out bool tiltSupported\_\-O)
+\begin{DoxyCompactList}\small\item\em Returns a 3-\/element array describing the tablet's orientation range and resolution capabilities. \item\end{DoxyCompactList}\item 
+static \hyperlink{struct_wintab_d_n_1_1_wintab_axis_array}{WintabAxisArray} \hyperlink{class_wintab_d_n_1_1_c_wintab_info_a76aad63fd705c6c98e7c285b1a0baf62}{GetDeviceRotation} (out bool rotationSupported\_\-O)
+\begin{DoxyCompactList}\small\item\em Returns a 3-\/element array describing the tablet's rotation range and resolution capabilities. \item\end{DoxyCompactList}\item 
+static UInt32 \hyperlink{class_wintab_d_n_1_1_c_wintab_info_abdfe24f63d122351a52957cd6a52b05b}{GetNumberOfDevices} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of devices connected. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{class_wintab_d_n_1_1_c_wintab_info_a239c82a9dfc1be06f7cd8487ff0f60f0}{IsStylusActive} ()
+\begin{DoxyCompactList}\small\item\em Returns whether a stylus is currently connected to the active cursor. \item\end{DoxyCompactList}\item 
+static string \hyperlink{class_wintab_d_n_1_1_c_wintab_info_a3481ff407b550197dbcd9764b87043b2}{GetStylusName} (\hyperlink{namespace_wintab_d_n_a54fdc0e52106effb073b35f8f6b3920a}{EWTICursorNameIndex} index\_\-I)
+\begin{DoxyCompactList}\small\item\em Returns a string containing the name of the selected stylus. \item\end{DoxyCompactList}\item 
+static Int32 \hyperlink{class_wintab_d_n_1_1_c_wintab_info_a45400b395e3a38548dc8bb41579e4428}{GetMaxPressure} (bool getNormalPressure\_\-I=true)
+\begin{DoxyCompactList}\small\item\em Return max normal pressure supported by tablet. \item\end{DoxyCompactList}\item 
+static \hyperlink{struct_wintab_d_n_1_1_wintab_axis}{WintabAxis} \hyperlink{class_wintab_d_n_1_1_c_wintab_info_ad6baf2c8073255192c3db7f2a63790b8}{GetTabletAxis} (\hyperlink{namespace_wintab_d_n_a38705aa38c49c04846399172fa9fd1cd}{EAxisDimension} dimension\_\-I)
+\begin{DoxyCompactList}\small\item\em Return the \hyperlink{struct_wintab_d_n_1_1_wintab_axis}{WintabAxis} object for the specified dimension. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to access Wintab interface data. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_a109ff387a12ad240dad3c2ad60324f3f}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetDefaultDeviceIndex@{GetDefaultDeviceIndex}}
+\index{GetDefaultDeviceIndex@{GetDefaultDeviceIndex}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetDefaultDeviceIndex}]{\setlength{\rightskip}{0pt plus 5cm}static Int32 WintabDN::CWintabInfo::GetDefaultDeviceIndex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_a109ff387a12ad240dad3c2ad60324f3f}
+
+
+Returns the default device. If this value is -\/1, then it also known as a \char`\"{}virtual device\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_a52434513444ad6db7e7e01ec6c771b88}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetDefaultDigitizingContext@{GetDefaultDigitizingContext}}
+\index{GetDefaultDigitizingContext@{GetDefaultDigitizingContext}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetDefaultDigitizingContext}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf CWintabContext} WintabDN::CWintabInfo::GetDefaultDigitizingContext (
+\begin{DoxyParamCaption}
+\item[{{\bf ECTXOptionValues}}]{ options\_\-I = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_a52434513444ad6db7e7e01ec6c771b88}
+
+
+Returns the default digitizing context, with useful context overrides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options\_\-I} & caller's options; OR'd into context options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A valid context object or null on error.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_a6b08041129180d63b1789246f93dca81}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetDefaultSystemContext@{GetDefaultSystemContext}}
+\index{GetDefaultSystemContext@{GetDefaultSystemContext}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetDefaultSystemContext}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf CWintabContext} WintabDN::CWintabInfo::GetDefaultSystemContext (
+\begin{DoxyParamCaption}
+\item[{{\bf ECTXOptionValues}}]{ options\_\-I = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_a6b08041129180d63b1789246f93dca81}
+
+
+Returns the default system context, with useful context overrides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options\_\-I} & caller's options; OR'd into context options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A valid context object or null on error.
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_a1687c6cbe3c29af468bf1fab066f8704}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetDeviceAxis@{GetDeviceAxis}}
+\index{GetDeviceAxis@{GetDeviceAxis}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetDeviceAxis}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf WintabAxis} WintabDN::CWintabInfo::GetDeviceAxis (
+\begin{DoxyParamCaption}
+\item[{Int32}]{ devIndex\_\-I, }
+\item[{{\bf EAxisDimension}}]{ dim\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_a1687c6cbe3c29af468bf1fab066f8704}
+
+
+Returns the \hyperlink{struct_wintab_d_n_1_1_wintab_axis}{WintabAxis} object for specified device and dimension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em devIndex\_\-I} & Device index (-\/1 = virtual device)\\
+\hline
+{\em dim\_\-I} & Dimension: AXIS\_\-X, AXIS\_\-Y or AXIS\_\-Z\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_acf649a900e2cfa4f439b7f1b5d1a5f81}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetDeviceInfo@{GetDeviceInfo}}
+\index{GetDeviceInfo@{GetDeviceInfo}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetDeviceInfo}]{\setlength{\rightskip}{0pt plus 5cm}static String WintabDN::CWintabInfo::GetDeviceInfo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_acf649a900e2cfa4f439b7f1b5d1a5f81}
+
+
+Returns a string containing device name. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_a8a414dc0fe7133bf250a2fbfa04c3468}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetDeviceOrientation@{GetDeviceOrientation}}
+\index{GetDeviceOrientation@{GetDeviceOrientation}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetDeviceOrientation}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf WintabAxisArray} WintabDN::CWintabInfo::GetDeviceOrientation (
+\begin{DoxyParamCaption}
+\item[{out bool}]{ tiltSupported\_\-O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_a8a414dc0fe7133bf250a2fbfa04c3468}
+
+
+Returns a 3-\/element array describing the tablet's orientation range and resolution capabilities. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_a76aad63fd705c6c98e7c285b1a0baf62}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetDeviceRotation@{GetDeviceRotation}}
+\index{GetDeviceRotation@{GetDeviceRotation}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetDeviceRotation}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf WintabAxisArray} WintabDN::CWintabInfo::GetDeviceRotation (
+\begin{DoxyParamCaption}
+\item[{out bool}]{ rotationSupported\_\-O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_a76aad63fd705c6c98e7c285b1a0baf62}
+
+
+Returns a 3-\/element array describing the tablet's rotation range and resolution capabilities. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_a45400b395e3a38548dc8bb41579e4428}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetMaxPressure@{GetMaxPressure}}
+\index{GetMaxPressure@{GetMaxPressure}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetMaxPressure}]{\setlength{\rightskip}{0pt plus 5cm}static Int32 WintabDN::CWintabInfo::GetMaxPressure (
+\begin{DoxyParamCaption}
+\item[{bool}]{ getNormalPressure\_\-I = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_a45400b395e3a38548dc8bb41579e4428}
+
+
+Return max normal pressure supported by tablet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em getNormalPressure\_\-I} & TRUE=$>$ normal pressure; FALSE=$>$ tangential pressure (not supported on all tablets)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+maximum pressure value or zero on error
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_abdfe24f63d122351a52957cd6a52b05b}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetNumberOfDevices@{GetNumberOfDevices}}
+\index{GetNumberOfDevices@{GetNumberOfDevices}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetNumberOfDevices}]{\setlength{\rightskip}{0pt plus 5cm}static UInt32 WintabDN::CWintabInfo::GetNumberOfDevices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_abdfe24f63d122351a52957cd6a52b05b}
+
+
+Returns the number of devices connected. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_a3481ff407b550197dbcd9764b87043b2}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetStylusName@{GetStylusName}}
+\index{GetStylusName@{GetStylusName}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetStylusName}]{\setlength{\rightskip}{0pt plus 5cm}static string WintabDN::CWintabInfo::GetStylusName (
+\begin{DoxyParamCaption}
+\item[{{\bf EWTICursorNameIndex}}]{ index\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_a3481ff407b550197dbcd9764b87043b2}
+
+
+Returns a string containing the name of the selected stylus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\_\-I} & indicates stylus type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_ad6baf2c8073255192c3db7f2a63790b8}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!GetTabletAxis@{GetTabletAxis}}
+\index{GetTabletAxis@{GetTabletAxis}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{GetTabletAxis}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf WintabAxis} WintabDN::CWintabInfo::GetTabletAxis (
+\begin{DoxyParamCaption}
+\item[{{\bf EAxisDimension}}]{ dimension\_\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_ad6baf2c8073255192c3db7f2a63790b8}
+
+
+Return the \hyperlink{struct_wintab_d_n_1_1_wintab_axis}{WintabAxis} object for the specified dimension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension\_\-I} & Dimension to fetch (eg: x, y)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_a239c82a9dfc1be06f7cd8487ff0f60f0}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!IsStylusActive@{IsStylusActive}}
+\index{IsStylusActive@{IsStylusActive}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{IsStylusActive}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabInfo::IsStylusActive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_a239c82a9dfc1be06f7cd8487ff0f60f0}
+
+
+Returns whether a stylus is currently connected to the active cursor. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_wintab_d_n_1_1_c_wintab_info_ab8bd2f68a94355ffecd3de6519b186e6}{
+\index{WintabDN::CWintabInfo@{WintabDN::CWintabInfo}!IsWintabAvailable@{IsWintabAvailable}}
+\index{IsWintabAvailable@{IsWintabAvailable}!WintabDN::CWintabInfo@{WintabDN::CWintabInfo}}
+\subsubsection[{IsWintabAvailable}]{\setlength{\rightskip}{0pt plus 5cm}static bool WintabDN::CWintabInfo::IsWintabAvailable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{class_wintab_d_n_1_1_c_wintab_info_ab8bd2f68a94355ffecd3de6519b186e6}
+
+
+Returns TRUE if Wintab service is running and responsive. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+WintabDN/CWintabInfo.cs\end{DoxyCompactItemize}

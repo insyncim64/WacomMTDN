@@ -1,0 +1,11 @@
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\bin\Debug\ExtensionTestApp.exe
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\bin\Debug\ExtensionTestApp.pdb
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\bin\Debug\WintabDN.dll
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\bin\Debug\WintabDN.pdb
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\obj\x86\Debug\ExtensionTestApp.csprojResolveAssemblyReference.cache
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\obj\x86\Debug\ExtensionTestApp.Properties.Resources.resources
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\obj\x86\Debug\FormExtTestApp.ExtensionTestForm.resources
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\obj\x86\Debug\ExtensionTestApp.csproj.GenerateResource.Cache
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\obj\x86\Debug\ExtensionTestApp.exe
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\obj\x86\Debug\ExtensionTestApp.pdb
+C:\Users\insyncim64\Downloads\WintabDN\ExtensionTestApp\bin\Debug\ExtensionTestApp.exe.config

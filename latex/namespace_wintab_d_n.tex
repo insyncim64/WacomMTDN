@@ -1,0 +1,649 @@
+\hypertarget{namespace_wintab_d_n}{
+\section{WintabDN Namespace Reference}
+\label{namespace_wintab_d_n}\index{WintabDN@{WintabDN}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wintab_d_n_1_1_c_mem_utils}{CMemUtils}
+\begin{DoxyCompactList}\small\item\em Provide utility methods for unmanaged memory management. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_wintab_axis}{WintabAxis}
+\begin{DoxyCompactList}\small\item\em Managed version of AXIS struct. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_wintab_axis_array}{WintabAxisArray}
+\begin{DoxyCompactList}\small\item\em Array of \hyperlink{struct_wintab_d_n_1_1_wintab_axis}{WintabAxis} objects. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_wintab_log_context}{WintabLogContext}
+\begin{DoxyCompactList}\small\item\em Managed version of Wintab LOGCONTEXT struct. This structure determines what events an application will get, how they will be processed, and how they will be delivered to the application or to Windows itself. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_c_wintab_context}{CWintabContext}
+\begin{DoxyCompactList}\small\item\em Class to support access to Wintab context management. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_normal_pressure}{WTNormalPressure}
+\begin{DoxyCompactList}\small\item\em Pen normal presure (PK\_\-NORMAL\_\-PRESSURE) \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_tangent_pressure}{WTTangentPressure}
+\begin{DoxyCompactList}\small\item\em Pen tangential pressure (PK\_\-TANGENT\_\-PRESSURE) \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_orientation}{WTOrientation}
+\begin{DoxyCompactList}\small\item\em Pen Orientation. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_rotation}{WTRotation}
+\begin{DoxyCompactList}\small\item\em Pen Rotation. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_wintab_packet}{WintabPacket}
+\begin{DoxyCompactList}\small\item\em Wintab data packet. Contains the \char`\"{}Full Monty\char`\"{} for all possible data values. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_extension_base}{WTExtensionBase}
+\begin{DoxyCompactList}\small\item\em Common properties for control extension data transactions. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_exp_key_data}{WTExpKeyData}
+\begin{DoxyCompactList}\small\item\em Extension data for one Express Key. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_slider_data}{WTSliderData}
+\begin{DoxyCompactList}\small\item\em Extension data for one touch ring or one touch strip. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_wintab_packet_ext}{WintabPacketExt}
+\begin{DoxyCompactList}\small\item\em Wintab extension data packet for one tablet control. The tablet controls for which extension data is available are: Express Key, Touch Ring and Touch Strip controls. Note that tablets will have either Touch Rings or Touch Strips -\/ not both. All tablets have Express Keys. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_c_wintab_data}{CWintabData}
+\begin{DoxyCompactList}\small\item\em Class to support capture and management of Wintab daa. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_w_t_extensions_global}{WTExtensionsGlobal}
+\begin{DoxyCompactList}\small\item\em Globals used for Wintab extensions. \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_extension_property_base}{WTExtensionPropertyBase}
+\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_extension_property}{WTExtensionProperty}
+\begin{DoxyCompactList}\small\item\em Structure for reading/writing non-\/image Wintab extension data. (Wintab 1.4) \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_w_t_extension_image_property}{WTExtensionImageProperty}
+\begin{DoxyCompactList}\small\item\em Structure read/writing image Wintab extension data. (Wintab 1.4) \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_c_wintab_extensions}{CWintabExtensions}
+\begin{DoxyCompactList}\small\item\em API for Wintab extensions functionality (Wintab 1.4). \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_wintab_d_n_1_1_h_w_n_d}{HWND}
+\begin{DoxyCompactList}\small\item\em Managed implementation of Wintab \hyperlink{struct_wintab_d_n_1_1_h_w_n_d}{HWND} typedef. Holds native Window handle. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_w_t_p_k_t}{WTPKT}
+\begin{DoxyCompactList}\small\item\em Managed implementation of Wintab \hyperlink{class_wintab_d_n_1_1_w_t_p_k_t}{WTPKT} typedef. Holds Wintab packet identifier. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_f_i_x32}{FIX32}
+\begin{DoxyCompactList}\small\item\em Managed implementation of Wintab \hyperlink{class_wintab_d_n_1_1_f_i_x32}{FIX32} typedef. Used for a fixed-\/point arithmetic value. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_h_c_t_x}{HCTX}
+\begin{DoxyCompactList}\small\item\em Managed implementation of Wintab \hyperlink{class_wintab_d_n_1_1_h_c_t_x}{HCTX} typedef. Holds a Wintab context identifier. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_c_wintab_funcs}{CWintabFuncs}
+\begin{DoxyCompactList}\small\item\em P/Invoke wrappers for Wintab functions. See Wintab\_\-v140.doc (Wintab 1.4 spec) and related Wintab documentation for details. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_c_wintab_info}{CWintabInfo}
+\begin{DoxyCompactList}\small\item\em Class to access Wintab interface data. \item\end{DoxyCompactList}\item 
+class \hyperlink{class_wintab_d_n_1_1_message_received_event_args}{MessageReceivedEventArgs}
+\begin{DoxyCompactList}\small\item\em Support for registering a Native Windows message with MessageEvents class. \item\end{DoxyCompactList}\item 
+class {\bfseries MessageEvents}
+\begin{DoxyCompactList}\small\item\em Windows native message handler, to provide support for detecting and responding to Wintab messages. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_wintab_d_n_a38705aa38c49c04846399172fa9fd1cd}{EAxisDimension} \{ {\bfseries AXIS\_\-X} =  EWTIDevicesIndex.DVC\_\-X, 
+{\bfseries AXIS\_\-Y} =  EWTIDevicesIndex.DVC\_\-Y, 
+{\bfseries AXIS\_\-Z} =  EWTIDevicesIndex.DVC\_\-Z
+ \}
+\begin{DoxyCompactList}\small\item\em Values to use when asking for X, Y or Z WintabAxis object. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a701e8021b6889039ed562596a2d1bdd2}{ECTXOptionValues} \{ \par
+{\bfseries CXO\_\-SYSTEM} =  0x0001, 
+{\bfseries CXO\_\-PEN} =  0x0002, 
+{\bfseries CXO\_\-MESSAGES} =  0x0004, 
+{\bfseries CXO\_\-CSRMESSAGES} =  0x0008, 
+\par
+{\bfseries CXO\_\-MGNINSIDE} =  0x4000, 
+{\bfseries CXO\_\-MARGIN} =  0x8000
+ \}
+\begin{DoxyCompactList}\small\item\em Context option values. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a6d3f719c7eebc1f9b081c2d31678536e}{ECTXStatusValues} \{ {\bfseries CXS\_\-DISABLED} =  0x0001, 
+{\bfseries CXS\_\-OBSCURED} =  0x0002, 
+{\bfseries CXS\_\-ONTOP} =  0x0004
+ \}
+\begin{DoxyCompactList}\small\item\em Context status values. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a4ae5c9d600336cd1fe11dd04cd207c31}{ECTXLockValues} \{ \par
+{\bfseries CXL\_\-INSIZE} =  0x0001, 
+{\bfseries CXL\_\-INASPECT} =  0x0002, 
+{\bfseries CXL\_\-SENSITIVITY} =  0x0004, 
+{\bfseries CXL\_\-MARGIN} =  0x0008, 
+\par
+{\bfseries CXL\_\-SYSOUT} =  0x0010
+ \}
+\begin{DoxyCompactList}\small\item\em Context lock values. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a0244b62cdae8bfd39a52f0656ae7d184}{EWintabPacketBit} \{ \par
+{\bfseries PK\_\-CONTEXT} =  0x0001, 
+{\bfseries PK\_\-STATUS} =  0x0002, 
+{\bfseries PK\_\-TIME} =  0x0004, 
+{\bfseries PK\_\-CHANGED} =  0x0008, 
+\par
+{\bfseries PK\_\-SERIAL\_\-NUMBER} =  0x0010, 
+{\bfseries PK\_\-CURSOR} =  0x0020, 
+{\bfseries PK\_\-BUTTONS} =  0x0040, 
+{\bfseries PK\_\-X} =  0x0080, 
+\par
+{\bfseries PK\_\-Y} =  0x0100, 
+{\bfseries PK\_\-Z} =  0x0200, 
+{\bfseries PK\_\-NORMAL\_\-PRESSURE} =  0x0400, 
+{\bfseries PK\_\-TANGENT\_\-PRESSURE} =  0x0800, 
+\par
+{\bfseries PK\_\-ORIENTATION} =  0x1000, 
+{\bfseries PK\_\-ROTATION} =  0x2000, 
+{\bfseries PK\_\-PKTBITS\_\-ALL} =  0x3FFF
+ \}
+\begin{DoxyCompactList}\small\item\em Wintab Packet bits. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a4b98724153acf19dc7b44dc911e7fd0d}{EWintabEventMessage} \{ \par
+{\bfseries WT\_\-PACKET} =  0x7FF0, 
+{\bfseries WT\_\-CTXOPEN} =  0x7FF1, 
+{\bfseries WT\_\-CTXCLOSE} =  0x7FF2, 
+{\bfseries WT\_\-CTXUPDATE} =  0x7FF3, 
+\par
+{\bfseries WT\_\-CTXOVERLAP} =  0x7FF4, 
+{\bfseries WT\_\-PROXIMITY} =  0x7FF5, 
+{\bfseries WT\_\-INFOCHANGE} =  0x7FF6, 
+{\bfseries WT\_\-CSRCHANGE} =  0x7FF7, 
+\par
+{\bfseries WT\_\-PACKETEXT} =  0x7FF8
+ \}
+\begin{DoxyCompactList}\small\item\em Wintab event messsages sent to an application. See Wintab Spec 1.4 for a description of these messages. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{EWintabPacketStatusValue} \{ \par
+\hyperlink{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{TPS\_\-PROXIMITY} =  0x0001, 
+\hyperlink{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{TPS\_\-QUEUE\_\-ERR} =  0x0002, 
+\hyperlink{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{TPS\_\-MARGIN} =  0x0004, 
+\hyperlink{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{TPS\_\-GRAB} =  0x0008, 
+\par
+\hyperlink{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{TPS\_\-INVERT} =  0x0010
+ \}
+\begin{DoxyCompactList}\small\item\em Wintab packet status values. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}{EWintabPacketButtonCode} \{ \hyperlink{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}{TBN\_\-NONE} =  0, 
+\hyperlink{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}{TBN\_\-UP} =  1, 
+\hyperlink{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}{TBN\_\-DOWN} =  2
+ \}
+\begin{DoxyCompactList}\small\item\em WintabPacket.pkButton codes. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{EWTXExtensionTag} \{ \hyperlink{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{WTX\_\-TOUCHSTRIP} =  6, 
+\hyperlink{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{WTX\_\-TOUCHRING} =  7, 
+\hyperlink{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{WTX\_\-EXPKEYS2} =  8
+ \}
+\begin{DoxyCompactList}\small\item\em Tag values used to get extension masks in GetWTExtensionMask. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EWTIExtensionIndex} \{ \par
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-NAME} =  1, 
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-TAG} =  2, 
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-MASK} =  3, 
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-SIZE} =  4, 
+\par
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-AXES} =  5, 
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-DEFAULT} =  6, 
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-DEFCONTEXT} =  7, 
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-DEFSYSCTX} =  8, 
+\par
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-CURSORS} =  9, 
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-DEVICES} =  110, 
+\hyperlink{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{EXT\_\-MAX} =  210
+ \}
+\begin{DoxyCompactList}\small\item\em Index values used for WTI extensions. For more information, see Wintab 1.4. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{EWTExtensionTabletProperty} \{ \par
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-CONTROLCOUNT} =  0, 
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-FUNCCOUNT} =  1, 
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-AVAILABLE} =  2, 
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-MIN} =  3, 
+\par
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-MAX} =  4, 
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-OVERRIDE} =  5, 
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-OVERRIDE\_\-NAME} =  6, 
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-OVERRIDE\_\-ICON} =  7, 
+\par
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-ICON\_\-WIDTH} =  8, 
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-ICON\_\-HEIGHT} =  9, 
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-ICON\_\-FORMAT} =  10, 
+\hyperlink{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{TABLET\_\-PROPERTY\_\-LOCATION} =  11
+ \}
+\begin{DoxyCompactList}\small\item\em Tablet property values used with WTExtGet and WTExtSet. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a4fb4432ff158db77a634fed851e23f6f}{EWTExtensionIconProperty} \{ {\bfseries TABLET\_\-ICON\_\-FMT\_\-NONE} =  0, 
+{\bfseries TABLET\_\-ICON\_\-FMT\_\-4BPP\_\-GRAY} =  1
+ \}
+\begin{DoxyCompactList}\small\item\em Tablet Icon values used with WTExtGet and WTExtSet. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_aeb27579e91c95fb5a7bf4a4a9dc7f875}{EWTICategoryIndex} \{ \par
+{\bfseries WTI\_\-INTERFACE} =  1, 
+{\bfseries WTI\_\-STATUS} =  2, 
+{\bfseries WTI\_\-DEFCONTEXT} =  3, 
+{\bfseries WTI\_\-DEFSYSCTX} =  4, 
+\par
+{\bfseries WTI\_\-DEVICES} =  100, 
+{\bfseries WTI\_\-CURSORS} =  200, 
+{\bfseries WTI\_\-EXTENSIONS} =  300, 
+{\bfseries WTI\_\-DDCTXS} =  400, 
+\par
+{\bfseries WTI\_\-DSCTXS} =  500
+ \}
+\begin{DoxyCompactList}\small\item\em Index values for WTInfo wCategory parameter. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a9db915754a02c42282c3766bfbafabe4}{EWTIInterfaceIndex} \{ \par
+{\bfseries IFC\_\-WINTABID} =  1, 
+{\bfseries IFC\_\-SPECVERSION} =  2, 
+{\bfseries IFC\_\-IMPLVERSION} =  3, 
+{\bfseries IFC\_\-NDEVICES} =  4, 
+\par
+{\bfseries IFC\_\-NCURSORS} =  5, 
+{\bfseries IFC\_\-NCONTEXTS} =  6, 
+{\bfseries IFC\_\-CTXOPTIONS} =  7, 
+{\bfseries IFC\_\-CTXSAVESIZE} =  8, 
+\par
+{\bfseries IFC\_\-NEXTENSIONS} =  9, 
+{\bfseries IFC\_\-NMANAGERS} =  10
+ \}
+\begin{DoxyCompactList}\small\item\em Index values for WTI\_\-INTERFACE. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a87e63128e31d86cb418e895f3d58565c}{EWTIDevicesIndex} \{ \par
+{\bfseries DVC\_\-NAME} =  1, 
+{\bfseries DVC\_\-HARDWARE} =  2, 
+{\bfseries DVC\_\-NCSRTYPES} =  3, 
+{\bfseries DVC\_\-FIRSTCSR} =  4, 
+\par
+{\bfseries DVC\_\-PKTRATE} =  5, 
+{\bfseries DVC\_\-PKTDATA} =  6, 
+{\bfseries DVC\_\-PKTMODE} =  7, 
+{\bfseries DVC\_\-CSRDATA} =  8, 
+\par
+{\bfseries DVC\_\-XMARGIN} =  9, 
+{\bfseries DVC\_\-YMARGIN} =  10, 
+{\bfseries DVC\_\-ZMARGIN} =  11, 
+{\bfseries DVC\_\-X} =  12, 
+\par
+{\bfseries DVC\_\-Y} =  13, 
+{\bfseries DVC\_\-Z} =  14, 
+{\bfseries DVC\_\-NPRESSURE} =  15, 
+{\bfseries DVC\_\-TPRESSURE} =  16, 
+\par
+{\bfseries DVC\_\-ORIENTATION} =  17, 
+{\bfseries DVC\_\-ROTATION} =  18, 
+{\bfseries DVC\_\-PNPID} =  19
+ \}
+\begin{DoxyCompactList}\small\item\em Index values for WTI\_\-DEVICES. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a215ef64798be3e0207e5bbf438659d61}{EWTICursorsIndex} \{ \par
+{\bfseries CSR\_\-NAME} =  1, 
+{\bfseries CSR\_\-ACTIVE} =  2, 
+{\bfseries CSR\_\-PKTDATA} =  3, 
+{\bfseries CSR\_\-BUTTONS} =  4, 
+\par
+{\bfseries CSR\_\-BUTTONBITS} =  5, 
+{\bfseries CSR\_\-BTNNAMES} =  6, 
+{\bfseries CSR\_\-BUTTONMAP} =  7, 
+{\bfseries CSR\_\-SYSBTNMAP} =  8, 
+\par
+{\bfseries CSR\_\-NPBUTTON} =  9, 
+{\bfseries CSR\_\-NPBTNMARKS} =  10, 
+{\bfseries CSR\_\-NPRESPONSE} =  11, 
+{\bfseries CSR\_\-TPBUTTON} =  12, 
+\par
+{\bfseries CSR\_\-TPBTNMARKS} =  13, 
+{\bfseries CSR\_\-TPRESPONSE} =  14, 
+{\bfseries CSR\_\-PHYSID} =  15, 
+{\bfseries CSR\_\-MODE} =  16, 
+\par
+{\bfseries CSR\_\-MINPKTDATA} =  17, 
+{\bfseries CSR\_\-MINBUTTONS} =  18, 
+{\bfseries CSR\_\-CAPABILITIES} =  19, 
+{\bfseries CSR\_\-TYPE} =  20
+ \}
+\begin{DoxyCompactList}\small\item\em Index values for WTI\_\-CURSORS. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a54fdc0e52106effb073b35f8f6b3920a}{EWTICursorNameIndex} \{ {\bfseries CSR\_\-NAME\_\-PUCK} =  EWTICategoryIndex.WTI\_\-CURSORS + 0, 
+{\bfseries CSR\_\-NAME\_\-PRESSURE\_\-STYLUS} =  EWTICategoryIndex.WTI\_\-CURSORS + 1, 
+{\bfseries CSR\_\-NAME\_\-ERASER} =  EWTICategoryIndex.WTI\_\-CURSORS + 2
+ \}
+\begin{DoxyCompactList}\small\item\em Index used with CSR\_\-NAME to get stylus types. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespace_wintab_d_n_a75b4777047ea6ca407c8cd928ca9ef26}{EWTIContextIndex} \{ \par
+{\bfseries CTX\_\-NAME} =  1, 
+{\bfseries CTX\_\-OPTIONS} =  2, 
+{\bfseries CTX\_\-STATUS} =  3, 
+{\bfseries CTX\_\-LOCKS} =  4, 
+\par
+{\bfseries CTX\_\-MSGBASE} =  5, 
+{\bfseries CTX\_\-DEVICE} =  6, 
+{\bfseries CTX\_\-PKTRATE} =  7, 
+{\bfseries CTX\_\-PKTDATA} =  8, 
+\par
+{\bfseries CTX\_\-PKTMODE} =  9, 
+{\bfseries CTX\_\-MOVEMASK} =  10, 
+{\bfseries CTX\_\-BTNDNMASK} =  11, 
+{\bfseries CTX\_\-BTNUPMASK} =  12, 
+\par
+{\bfseries CTX\_\-INORGX} =  13, 
+{\bfseries CTX\_\-INORGY} =  14, 
+{\bfseries CTX\_\-INORGZ} =  15, 
+{\bfseries CTX\_\-INEXTX} =  16, 
+\par
+{\bfseries CTX\_\-INEXTY} =  17, 
+{\bfseries CTX\_\-INEXTZ} =  18, 
+{\bfseries CTX\_\-OUTORGX} =  19, 
+{\bfseries CTX\_\-OUTORGY} =  20, 
+\par
+{\bfseries CTX\_\-OUTORGZ} =  21, 
+{\bfseries CTX\_\-OUTEXTX} =  22, 
+{\bfseries CTX\_\-OUTEXTY} =  23, 
+{\bfseries CTX\_\-OUTEXTZ} =  24, 
+\par
+{\bfseries CTX\_\-SENSX} =  25, 
+{\bfseries CTX\_\-SENSY} =  26, 
+{\bfseries CTX\_\-SENSZ} =  27, 
+{\bfseries CTX\_\-SYSMODE} =  28, 
+\par
+{\bfseries CTX\_\-SYSORGX} =  29, 
+{\bfseries CTX\_\-SYSORGY} =  30, 
+{\bfseries CTX\_\-SYSEXTX} =  31, 
+{\bfseries CTX\_\-SYSEXTY} =  32, 
+\par
+{\bfseries CTX\_\-SYSSENSX} =  33, 
+{\bfseries CTX\_\-SYSSENSY} =  34
+ \}
+\begin{DoxyCompactList}\small\item\em Index values for WTI contexts. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespace_wintab_d_n_a38705aa38c49c04846399172fa9fd1cd}{
+\index{WintabDN@{WintabDN}!EAxisDimension@{EAxisDimension}}
+\index{EAxisDimension@{EAxisDimension}!WintabDN@{WintabDN}}
+\subsubsection[{EAxisDimension}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EAxisDimension}}}
+\label{namespace_wintab_d_n_a38705aa38c49c04846399172fa9fd1cd}
+
+
+Values to use when asking for X, Y or Z \hyperlink{struct_wintab_d_n_1_1_wintab_axis}{WintabAxis} object. 
+
+\hypertarget{namespace_wintab_d_n_a4ae5c9d600336cd1fe11dd04cd207c31}{
+\index{WintabDN@{WintabDN}!ECTXLockValues@{ECTXLockValues}}
+\index{ECTXLockValues@{ECTXLockValues}!WintabDN@{WintabDN}}
+\subsubsection[{ECTXLockValues}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::ECTXLockValues}}}
+\label{namespace_wintab_d_n_a4ae5c9d600336cd1fe11dd04cd207c31}
+
+
+Context lock values. 
+
+\hypertarget{namespace_wintab_d_n_a701e8021b6889039ed562596a2d1bdd2}{
+\index{WintabDN@{WintabDN}!ECTXOptionValues@{ECTXOptionValues}}
+\index{ECTXOptionValues@{ECTXOptionValues}!WintabDN@{WintabDN}}
+\subsubsection[{ECTXOptionValues}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::ECTXOptionValues}}}
+\label{namespace_wintab_d_n_a701e8021b6889039ed562596a2d1bdd2}
+
+
+Context option values. 
+
+\hypertarget{namespace_wintab_d_n_a6d3f719c7eebc1f9b081c2d31678536e}{
+\index{WintabDN@{WintabDN}!ECTXStatusValues@{ECTXStatusValues}}
+\index{ECTXStatusValues@{ECTXStatusValues}!WintabDN@{WintabDN}}
+\subsubsection[{ECTXStatusValues}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::ECTXStatusValues}}}
+\label{namespace_wintab_d_n_a6d3f719c7eebc1f9b081c2d31678536e}
+
+
+Context status values. 
+
+\hypertarget{namespace_wintab_d_n_a4b98724153acf19dc7b44dc911e7fd0d}{
+\index{WintabDN@{WintabDN}!EWintabEventMessage@{EWintabEventMessage}}
+\index{EWintabEventMessage@{EWintabEventMessage}!WintabDN@{WintabDN}}
+\subsubsection[{EWintabEventMessage}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWintabEventMessage}}}
+\label{namespace_wintab_d_n_a4b98724153acf19dc7b44dc911e7fd0d}
+
+
+Wintab event messsages sent to an application. See Wintab Spec 1.4 for a description of these messages. 
+
+\hypertarget{namespace_wintab_d_n_a0244b62cdae8bfd39a52f0656ae7d184}{
+\index{WintabDN@{WintabDN}!EWintabPacketBit@{EWintabPacketBit}}
+\index{EWintabPacketBit@{EWintabPacketBit}!WintabDN@{WintabDN}}
+\subsubsection[{EWintabPacketBit}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWintabPacketBit}}}
+\label{namespace_wintab_d_n_a0244b62cdae8bfd39a52f0656ae7d184}
+
+
+Wintab Packet bits. 
+
+\hypertarget{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}{
+\index{WintabDN@{WintabDN}!EWintabPacketButtonCode@{EWintabPacketButtonCode}}
+\index{EWintabPacketButtonCode@{EWintabPacketButtonCode}!WintabDN@{WintabDN}}
+\subsubsection[{EWintabPacketButtonCode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWintabPacketButtonCode}}}
+\label{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}
+
+
+WintabPacket.pkButton codes. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TBN\_\-NONE@{TBN\_\-NONE}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TBN\_\-NONE@{TBN\_\-NONE}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}{
+TBN\_\-NONE}
+\label{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}
+}]No change in button state. \index{TBN\_\-UP@{TBN\_\-UP}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TBN\_\-UP@{TBN\_\-UP}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}{
+TBN\_\-UP}
+\label{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}
+}]Button was released. \index{TBN\_\-DOWN@{TBN\_\-DOWN}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TBN\_\-DOWN@{TBN\_\-DOWN}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}{
+TBN\_\-DOWN}
+\label{namespace_wintab_d_n_a0829e0e054dd601b4f043415c0090c31}
+}]Button was pressed. \end{description}
+\end{Desc}
+
+\hypertarget{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{
+\index{WintabDN@{WintabDN}!EWintabPacketStatusValue@{EWintabPacketStatusValue}}
+\index{EWintabPacketStatusValue@{EWintabPacketStatusValue}!WintabDN@{WintabDN}}
+\subsubsection[{EWintabPacketStatusValue}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWintabPacketStatusValue}}}
+\label{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}
+
+
+Wintab packet status values. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TPS\_\-PROXIMITY@{TPS\_\-PROXIMITY}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TPS\_\-PROXIMITY@{TPS\_\-PROXIMITY}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{
+TPS\_\-PROXIMITY}
+\label{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}
+}]Specifies that the cursor is out of the context. \index{TPS\_\-QUEUE\_\-ERR@{TPS\_\-QUEUE\_\-ERR}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TPS\_\-QUEUE\_\-ERR@{TPS\_\-QUEUE\_\-ERR}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{
+TPS\_\-QUEUE\_\-ERR}
+\label{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}
+}]Specifies that the event queue for the context has overflowed. \index{TPS\_\-MARGIN@{TPS\_\-MARGIN}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TPS\_\-MARGIN@{TPS\_\-MARGIN}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{
+TPS\_\-MARGIN}
+\label{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}
+}]Specifies that the cursor is in the margin of the context. \index{TPS\_\-GRAB@{TPS\_\-GRAB}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TPS\_\-GRAB@{TPS\_\-GRAB}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{
+TPS\_\-GRAB}
+\label{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}
+}]Specifies that the cursor is out of the context, but that the context has grabbed input while waiting for a button release event. \index{TPS\_\-INVERT@{TPS\_\-INVERT}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TPS\_\-INVERT@{TPS\_\-INVERT}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}{
+TPS\_\-INVERT}
+\label{namespace_wintab_d_n_afe14d17b83fb34685a298d857c203cac}
+}]Specifies that the cursor is in its inverted state. \end{description}
+\end{Desc}
+
+\hypertarget{namespace_wintab_d_n_a4fb4432ff158db77a634fed851e23f6f}{
+\index{WintabDN@{WintabDN}!EWTExtensionIconProperty@{EWTExtensionIconProperty}}
+\index{EWTExtensionIconProperty@{EWTExtensionIconProperty}!WintabDN@{WintabDN}}
+\subsubsection[{EWTExtensionIconProperty}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTExtensionIconProperty}}}
+\label{namespace_wintab_d_n_a4fb4432ff158db77a634fed851e23f6f}
+
+
+Tablet Icon values used with WTExtGet and WTExtSet. 
+
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+\index{WintabDN@{WintabDN}!EWTExtensionTabletProperty@{EWTExtensionTabletProperty}}
+\index{EWTExtensionTabletProperty@{EWTExtensionTabletProperty}!WintabDN@{WintabDN}}
+\subsubsection[{EWTExtensionTabletProperty}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTExtensionTabletProperty}}}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+
+
+Tablet property values used with WTExtGet and WTExtSet. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TABLET\_\-PROPERTY\_\-CONTROLCOUNT@{TABLET\_\-PROPERTY\_\-CONTROLCOUNT}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-CONTROLCOUNT@{TABLET\_\-PROPERTY\_\-CONTROLCOUNT}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-CONTROLCOUNT}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]number of physical controls on tablet \index{TABLET\_\-PROPERTY\_\-FUNCCOUNT@{TABLET\_\-PROPERTY\_\-FUNCCOUNT}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-FUNCCOUNT@{TABLET\_\-PROPERTY\_\-FUNCCOUNT}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-FUNCCOUNT}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]number of functions of control \index{TABLET\_\-PROPERTY\_\-AVAILABLE@{TABLET\_\-PROPERTY\_\-AVAILABLE}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-AVAILABLE@{TABLET\_\-PROPERTY\_\-AVAILABLE}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-AVAILABLE}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]control/mode is available for override \index{TABLET\_\-PROPERTY\_\-MIN@{TABLET\_\-PROPERTY\_\-MIN}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-MIN@{TABLET\_\-PROPERTY\_\-MIN}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-MIN}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]minimum value of control function \index{TABLET\_\-PROPERTY\_\-MAX@{TABLET\_\-PROPERTY\_\-MAX}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-MAX@{TABLET\_\-PROPERTY\_\-MAX}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-MAX}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]maximum value of control function \index{TABLET\_\-PROPERTY\_\-OVERRIDE@{TABLET\_\-PROPERTY\_\-OVERRIDE}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-OVERRIDE@{TABLET\_\-PROPERTY\_\-OVERRIDE}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-OVERRIDE}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]Indicates control should be overriden. \index{TABLET\_\-PROPERTY\_\-OVERRIDE\_\-NAME@{TABLET\_\-PROPERTY\_\-OVERRIDE\_\-NAME}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-OVERRIDE\_\-NAME@{TABLET\_\-PROPERTY\_\-OVERRIDE\_\-NAME}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-OVERRIDE\_\-NAME}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]UTF8 encoded displayable name when control is overridden. \index{TABLET\_\-PROPERTY\_\-OVERRIDE\_\-ICON@{TABLET\_\-PROPERTY\_\-OVERRIDE\_\-ICON}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-OVERRIDE\_\-ICON@{TABLET\_\-PROPERTY\_\-OVERRIDE\_\-ICON}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-OVERRIDE\_\-ICON}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]PNG icon image to shown when control is overriden (supported only tablets with display OLEDs; eg: Intuos4) \index{TABLET\_\-PROPERTY\_\-ICON\_\-WIDTH@{TABLET\_\-PROPERTY\_\-ICON\_\-WIDTH}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-ICON\_\-WIDTH@{TABLET\_\-PROPERTY\_\-ICON\_\-WIDTH}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-ICON\_\-WIDTH}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]Pixel width of icon display. \index{TABLET\_\-PROPERTY\_\-ICON\_\-HEIGHT@{TABLET\_\-PROPERTY\_\-ICON\_\-HEIGHT}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-ICON\_\-HEIGHT@{TABLET\_\-PROPERTY\_\-ICON\_\-HEIGHT}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-ICON\_\-HEIGHT}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]Pixel height of icon display. \index{TABLET\_\-PROPERTY\_\-ICON\_\-FORMAT@{TABLET\_\-PROPERTY\_\-ICON\_\-FORMAT}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-ICON\_\-FORMAT@{TABLET\_\-PROPERTY\_\-ICON\_\-FORMAT}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-ICON\_\-FORMAT}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]Pixel format of icon display (see TABLET\_\-ICON\_\-FMT\_\-$\ast$) \index{TABLET\_\-PROPERTY\_\-LOCATION@{TABLET\_\-PROPERTY\_\-LOCATION}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!TABLET\_\-PROPERTY\_\-LOCATION@{TABLET\_\-PROPERTY\_\-LOCATION}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}{
+TABLET\_\-PROPERTY\_\-LOCATION}
+\label{namespace_wintab_d_n_a21cb408997e6cbe0866e75b0fe0a743f}
+}]Physical location of control (see TABLET\_\-LOC\_\-$\ast$) \end{description}
+\end{Desc}
+
+\hypertarget{namespace_wintab_d_n_aeb27579e91c95fb5a7bf4a4a9dc7f875}{
+\index{WintabDN@{WintabDN}!EWTICategoryIndex@{EWTICategoryIndex}}
+\index{EWTICategoryIndex@{EWTICategoryIndex}!WintabDN@{WintabDN}}
+\subsubsection[{EWTICategoryIndex}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTICategoryIndex}}}
+\label{namespace_wintab_d_n_aeb27579e91c95fb5a7bf4a4a9dc7f875}
+
+
+Index values for WTInfo wCategory parameter. 
+
+\hypertarget{namespace_wintab_d_n_a75b4777047ea6ca407c8cd928ca9ef26}{
+\index{WintabDN@{WintabDN}!EWTIContextIndex@{EWTIContextIndex}}
+\index{EWTIContextIndex@{EWTIContextIndex}!WintabDN@{WintabDN}}
+\subsubsection[{EWTIContextIndex}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTIContextIndex}}}
+\label{namespace_wintab_d_n_a75b4777047ea6ca407c8cd928ca9ef26}
+
+
+Index values for WTI contexts. 
+
+\hypertarget{namespace_wintab_d_n_a54fdc0e52106effb073b35f8f6b3920a}{
+\index{WintabDN@{WintabDN}!EWTICursorNameIndex@{EWTICursorNameIndex}}
+\index{EWTICursorNameIndex@{EWTICursorNameIndex}!WintabDN@{WintabDN}}
+\subsubsection[{EWTICursorNameIndex}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTICursorNameIndex}}}
+\label{namespace_wintab_d_n_a54fdc0e52106effb073b35f8f6b3920a}
+
+
+Index used with CSR\_\-NAME to get stylus types. 
+
+\hypertarget{namespace_wintab_d_n_a215ef64798be3e0207e5bbf438659d61}{
+\index{WintabDN@{WintabDN}!EWTICursorsIndex@{EWTICursorsIndex}}
+\index{EWTICursorsIndex@{EWTICursorsIndex}!WintabDN@{WintabDN}}
+\subsubsection[{EWTICursorsIndex}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTICursorsIndex}}}
+\label{namespace_wintab_d_n_a215ef64798be3e0207e5bbf438659d61}
+
+
+Index values for WTI\_\-CURSORS. 
+
+\hypertarget{namespace_wintab_d_n_a87e63128e31d86cb418e895f3d58565c}{
+\index{WintabDN@{WintabDN}!EWTIDevicesIndex@{EWTIDevicesIndex}}
+\index{EWTIDevicesIndex@{EWTIDevicesIndex}!WintabDN@{WintabDN}}
+\subsubsection[{EWTIDevicesIndex}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTIDevicesIndex}}}
+\label{namespace_wintab_d_n_a87e63128e31d86cb418e895f3d58565c}
+
+
+Index values for WTI\_\-DEVICES. 
+
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+\index{WintabDN@{WintabDN}!EWTIExtensionIndex@{EWTIExtensionIndex}}
+\index{EWTIExtensionIndex@{EWTIExtensionIndex}!WintabDN@{WintabDN}}
+\subsubsection[{EWTIExtensionIndex}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTIExtensionIndex}}}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+
+
+Index values used for WTI extensions. For more information, see Wintab 1.4. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{EXT\_\-NAME@{EXT\_\-NAME}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-NAME@{EXT\_\-NAME}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-NAME}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Get a unique, null-\/terminated string describing the extension. \index{EXT\_\-TAG@{EXT\_\-TAG}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-TAG@{EXT\_\-TAG}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-TAG}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Get a unique identifier for the extension. \index{EXT\_\-MASK@{EXT\_\-MASK}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-MASK@{EXT\_\-MASK}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-MASK}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Get a mask that can be bitwise OR'ed with WTPKT-\/type variables to select the extension. \index{EXT\_\-SIZE@{EXT\_\-SIZE}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-SIZE@{EXT\_\-SIZE}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-SIZE}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Get an array of two UINTs specifying the extension's size within a packet (in bytes). The first is for absolute mode; the second is for relative mode. \index{EXT\_\-AXES@{EXT\_\-AXES}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-AXES@{EXT\_\-AXES}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-AXES}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Get an array of axis descriptions, as needed for the extension. \index{EXT\_\-DEFAULT@{EXT\_\-DEFAULT}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-DEFAULT@{EXT\_\-DEFAULT}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-DEFAULT}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]get the current global default data, as needed for the extension. \index{EXT\_\-DEFCONTEXT@{EXT\_\-DEFCONTEXT}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-DEFCONTEXT@{EXT\_\-DEFCONTEXT}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-DEFCONTEXT}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Get the current default digitizing context-\/specific data, as needed for the extension. \index{EXT\_\-DEFSYSCTX@{EXT\_\-DEFSYSCTX}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-DEFSYSCTX@{EXT\_\-DEFSYSCTX}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-DEFSYSCTX}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Get the current default system context-\/specific data, as needed for the extension. \index{EXT\_\-CURSORS@{EXT\_\-CURSORS}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-CURSORS@{EXT\_\-CURSORS}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-CURSORS}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Get a byte array of the current default cursor-\/specific data, as need for the extension. \index{EXT\_\-DEVICES@{EXT\_\-DEVICES}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-DEVICES@{EXT\_\-DEVICES}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-DEVICES}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Allow 100 cursors. \index{EXT\_\-MAX@{EXT\_\-MAX}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!EXT\_\-MAX@{EXT\_\-MAX}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}{
+EXT\_\-MAX}
+\label{namespace_wintab_d_n_a52875c234488913934e0d49ac13c438d}
+}]Allow 100 devices. \end{description}
+\end{Desc}
+
+\hypertarget{namespace_wintab_d_n_a9db915754a02c42282c3766bfbafabe4}{
+\index{WintabDN@{WintabDN}!EWTIInterfaceIndex@{EWTIInterfaceIndex}}
+\index{EWTIInterfaceIndex@{EWTIInterfaceIndex}!WintabDN@{WintabDN}}
+\subsubsection[{EWTIInterfaceIndex}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTIInterfaceIndex}}}
+\label{namespace_wintab_d_n_a9db915754a02c42282c3766bfbafabe4}
+
+
+Index values for WTI\_\-INTERFACE. 
+
+\hypertarget{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{
+\index{WintabDN@{WintabDN}!EWTXExtensionTag@{EWTXExtensionTag}}
+\index{EWTXExtensionTag@{EWTXExtensionTag}!WintabDN@{WintabDN}}
+\subsubsection[{EWTXExtensionTag}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WintabDN::EWTXExtensionTag}}}
+\label{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}
+
+
+Tag values used to get extension masks in GetWTExtensionMask. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{WTX\_\-TOUCHSTRIP@{WTX\_\-TOUCHSTRIP}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!WTX\_\-TOUCHSTRIP@{WTX\_\-TOUCHSTRIP}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{
+WTX\_\-TOUCHSTRIP}
+\label{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}
+}]Touch Strip extension mask tag. \index{WTX\_\-TOUCHRING@{WTX\_\-TOUCHRING}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!WTX\_\-TOUCHRING@{WTX\_\-TOUCHRING}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{
+WTX\_\-TOUCHRING}
+\label{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}
+}]Touch Ring extension mask tag. \index{WTX\_\-EXPKEYS2@{WTX\_\-EXPKEYS2}!WintabDN@{WintabDN}}\index{WintabDN@{WintabDN}!WTX\_\-EXPKEYS2@{WTX\_\-EXPKEYS2}}\item[{\em 
+\hypertarget{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}{
+WTX\_\-EXPKEYS2}
+\label{namespace_wintab_d_n_a303ef868b8887dc43872ddac8a7d059b}
+}]Express Key extension mask tag. \end{description}
+\end{Desc}
+

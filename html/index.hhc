@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN"><param name="Local" value="index.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Getting Started"><param name="Local" value="page1.html"><param name="ImageNumber" value="11"></OBJECT>
+  <UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="A WintabDN example"><param name="Local" value="page2.html"><param name="ImageNumber" value="11"></OBJECT>
+  <UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Primary WintabDN Classes"><param name="Local" value="page3.html"><param name="ImageNumber" value="11"></OBJECT>
+  <UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::CMemUtils"><param name="Local" value="class_wintab_d_n_1_1_c_mem_utils.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::CWintabContext"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_context.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::CWintabData"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_data.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::CWintabExtensions"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_extensions.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::CWintabFuncs"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_funcs.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::CWintabInfo"><param name="Local" value="class_wintab_d_n_1_1_c_wintab_info.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::FIX32"><param name="Local" value="class_wintab_d_n_1_1_f_i_x32.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::HCTX"><param name="Local" value="class_wintab_d_n_1_1_h_c_t_x.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::HWND"><param name="Local" value="struct_wintab_d_n_1_1_h_w_n_d.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::MessageReceivedEventArgs"><param name="Local" value="class_wintab_d_n_1_1_message_received_event_args.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WintabAxis"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WintabAxisArray"><param name="Local" value="struct_wintab_d_n_1_1_wintab_axis_array.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WintabLogContext"><param name="Local" value="struct_wintab_d_n_1_1_wintab_log_context.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WintabPacket"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WintabPacketExt"><param name="Local" value="struct_wintab_d_n_1_1_wintab_packet_ext.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTExpKeyData"><param name="Local" value="struct_wintab_d_n_1_1_w_t_exp_key_data.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTExtensionBase"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_base.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTExtensionImageProperty"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_image_property.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTExtensionProperty"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTExtensionPropertyBase"><param name="Local" value="struct_wintab_d_n_1_1_w_t_extension_property_base.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTExtensionsGlobal"><param name="Local" value="class_wintab_d_n_1_1_w_t_extensions_global.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTNormalPressure"><param name="Local" value="struct_wintab_d_n_1_1_w_t_normal_pressure.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTOrientation"><param name="Local" value="struct_wintab_d_n_1_1_w_t_orientation.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTPKT"><param name="Local" value="class_wintab_d_n_1_1_w_t_p_k_t.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTRotation"><param name="Local" value="struct_wintab_d_n_1_1_w_t_rotation.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTSliderData"><param name="Local" value="struct_wintab_d_n_1_1_w_t_slider_data.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN::WTTangentPressure"><param name="Local" value="struct_wintab_d_n_1_1_w_t_tangent_pressure.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="WintabDN"><param name="Local" value="namespace_wintab_d_n.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace Members"><param name="Local" value="namespacemembers.html"><param name="ImageNumber" value="11"></OBJECT>
+</UL>
+</BODY>
+</HTML>

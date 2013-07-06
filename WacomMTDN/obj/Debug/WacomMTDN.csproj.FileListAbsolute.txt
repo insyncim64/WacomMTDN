@@ -1,0 +1,5 @@
+C:\Users\insyncim64\Downloads\WintabDN\WacomMTDN\obj\Debug\WacomMTDN.csprojResolveAssemblyReference.cache
+C:\Users\insyncim64\Downloads\WintabDN\WacomMTDN\bin\Debug\WacomMTDN.dll
+C:\Users\insyncim64\Downloads\WintabDN\WacomMTDN\bin\Debug\WacomMTDN.pdb
+C:\Users\insyncim64\Downloads\WintabDN\WacomMTDN\obj\Debug\WacomMTDN.dll
+C:\Users\insyncim64\Downloads\WintabDN\WacomMTDN\obj\Debug\WacomMTDN.pdb

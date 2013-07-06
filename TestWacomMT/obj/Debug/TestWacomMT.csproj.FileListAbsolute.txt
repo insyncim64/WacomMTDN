@@ -1,0 +1,8 @@
+C:\Users\insyncim64\Downloads\WintabDN\TestWacomMT\bin\Debug\TestWacomMT.exe.config
+C:\Users\insyncim64\Downloads\WintabDN\TestWacomMT\obj\Debug\TestWacomMT.csprojResolveAssemblyReference.cache
+C:\Users\insyncim64\Downloads\WintabDN\TestWacomMT\bin\Debug\TestWacomMT.exe
+C:\Users\insyncim64\Downloads\WintabDN\TestWacomMT\bin\Debug\TestWacomMT.pdb
+C:\Users\insyncim64\Downloads\WintabDN\TestWacomMT\bin\Debug\WacomMTDN.dll
+C:\Users\insyncim64\Downloads\WintabDN\TestWacomMT\bin\Debug\WacomMTDN.pdb
+C:\Users\insyncim64\Downloads\WintabDN\TestWacomMT\obj\Debug\TestWacomMT.exe
+C:\Users\insyncim64\Downloads\WintabDN\TestWacomMT\obj\Debug\TestWacomMT.pdb
