@@ -342,6 +342,7 @@ namespace WacomMTDN
 
         /// float
         public float height;
+
     }
 
     public class WacomMTFingerList

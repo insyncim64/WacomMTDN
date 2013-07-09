@@ -13,19 +13,44 @@ namespace WacomMTDN
         public delegate void WMTDetachHandler(int deviceID);
         public delegate int WMTFingerHandler(WacomMTFingerList fingerPacket);
         public delegate int WMTBlobHandler(WacomMTBlobAggregateList blobPacket);
-        public delegate int WMTRawHandler(WacomMTRawDataList blobPacket);
+        public delegate int WMTRawHandler(WacomMTRawDataList rawPacket);
 
-        private  WMTFingerHandler _fingerEvent;
-        private  WMTBlobHandler _blobEvent;
-        private  WMTRawHandler _rawEvent;
+        private  static WMTFingerHandler _fingerEvent;
+        private  static WMTBlobHandler _blobEvent;
+        private  static WMTRawHandler _rawEvent;
+
+        private WacomMTHitRect fingerHitRect;
+        private WacomMTProcessingMode fingerProcessingMode;
+        private WacomMTHitRect blobHitRect;
+        private WacomMTProcessingMode blobProcessingMode;
+        private WacomMTProcessingMode rawProcessingMode;
 
         public Dictionary<int, WacomMTCapability> capabilityMap { get; private set; }
         public List<int> deviceList {get;private set;}
 
         private static WacomMTDNManager _instance;
 
+        private WMT_ATTACH_CALLBACK localAttachCallback;
+        private WMT_DETACH_CALLBACK localDetachCallback;
+        private WMT_FINGER_CALLBACK localFingerCallback;
+        private WMT_BLOB_CALLBACK localBlobCallback;
+        private WMT_RAW_CALLBACK localRawCallback;
+
         private WacomMTDNManager()
         {
+            localAttachCallback = new WMT_ATTACH_CALLBACK(WMTAttachCallbackInternal);
+            localDetachCallback = new WMT_DETACH_CALLBACK(WMTDetachCallbackInternal);
+            localFingerCallback = new WMT_FINGER_CALLBACK(WMTFingerCallbackInternal);
+            localBlobCallback = new WMT_BLOB_CALLBACK(WMTBlobCallbackInternal);
+            localRawCallback = new WMT_RAW_CALLBACK(WMTRawCallbackInternal);
+
+            fingerHitRect = new WacomMTHitRect();
+            fingerProcessingMode = WacomMTProcessingMode.WMTProcessingModeNone;
+
+            blobHitRect = new WacomMTHitRect();
+            blobProcessingMode = WacomMTProcessingMode.WMTProcessingModeNone;
+
+            rawProcessingMode = WacomMTProcessingMode.WMTProcessingModeNone;
         }
 
         public static WacomMTDNManager GetInstance()
@@ -49,6 +74,22 @@ namespace WacomMTDN
         /// </summary>
         public event WMTDetachHandler DetachEvent;
 
+        public void configureFingerEvent(WacomMTHitRect hitRect, WacomMTProcessingMode mode)
+        {
+            fingerHitRect = hitRect;
+            fingerProcessingMode = mode;
+        }
+
+        public void configureBlobEvent(WacomMTHitRect hitRect, WacomMTProcessingMode mode)
+        {
+            blobHitRect = hitRect;
+            blobProcessingMode = mode;
+        }
+
+        public void configureRawEvent(WacomMTProcessingMode mode)
+        {
+            rawProcessingMode = mode;
+        }
         /// <summary>
         /// An internal handler should be set to capture the callback
         /// </summary>
@@ -59,9 +100,22 @@ namespace WacomMTDN
                 if (_fingerEvent==null && deviceList != null)
                 {
                     int count = deviceList.Count;
-                    for (int i = 0; i < count; i++)
+                    if (WacomMTUtils.IsHitRectEmpty(fingerHitRect))
                     {
-                        WacomMTFunc.WacomMTRegisterFingerReadCallback(deviceList[i], IntPtr.Zero, WacomMTProcessingMode.WMTProcessingModeNone, WMTFingerCallbackInternal, IntPtr.Zero);
+                        for (int i = 0; i < count; i++)
+                        {
+                            WacomMTFunc.WacomMTRegisterFingerReadCallback(deviceList[i], IntPtr.Zero, fingerProcessingMode, localFingerCallback, IntPtr.Zero);
+                        }
+                    }
+                    else
+                    {
+                        IntPtr hitRectPtr = WacomMTUtils.AllocUnmanagedBuf(typeof(WacomMTHitRect));
+                        Marshal.StructureToPtr(fingerHitRect, hitRectPtr, false);
+                        for (int i = 0; i < count; i++)
+                        {
+                            WacomMTFunc.WacomMTRegisterFingerReadCallback(deviceList[i], hitRectPtr, fingerProcessingMode, localFingerCallback, IntPtr.Zero);
+                        }
+                        WacomMTUtils.FreeUnmanagedBuf(hitRectPtr);
                     }
                 }
                 _fingerEvent += value;
@@ -83,9 +137,22 @@ namespace WacomMTDN
                 if (_blobEvent == null && deviceList != null)
                 {
                     int count = deviceList.Count;
-                    for (int i = 0; i < count; i++)
+                    if (WacomMTUtils.IsHitRectEmpty(blobHitRect))
                     {
-                        WacomMTFunc.WacomMTRegisterBlobReadCallback(deviceList[i], IntPtr.Zero, WacomMTProcessingMode.WMTProcessingModeNone, WMTBlobCallbackInternal, IntPtr.Zero);
+                        for (int i = 0; i < count; i++)
+                        {
+                            WacomMTFunc.WacomMTRegisterBlobReadCallback(deviceList[i], IntPtr.Zero, blobProcessingMode, localBlobCallback, IntPtr.Zero);
+                        }
+                    }
+                    else
+                    {
+                        IntPtr hitRectPtr = WacomMTUtils.AllocUnmanagedBuf(typeof(WacomMTHitRect));
+                        Marshal.StructureToPtr(blobHitRect, hitRectPtr, false);
+                        for (int i = 0; i < count; i++)
+                        {
+                            WacomMTFunc.WacomMTRegisterBlobReadCallback(deviceList[i], hitRectPtr, blobProcessingMode, localBlobCallback, IntPtr.Zero);
+                        }
+                        WacomMTUtils.FreeUnmanagedBuf(hitRectPtr);
                     }
                 }
                 _blobEvent += value;
@@ -109,7 +176,7 @@ namespace WacomMTDN
                     int count = deviceList.Count;
                     for (int i = 0; i < count; i++)
                     {
-                        WacomMTFunc.WacomMTRegisterRawReadCallback(deviceList[i], WacomMTProcessingMode.WMTProcessingModeNone, WMTRawCallbackInternal, IntPtr.Zero);
+                        WacomMTFunc.WacomMTRegisterRawReadCallback(deviceList[i], rawProcessingMode, localRawCallback, IntPtr.Zero);
                     }
                 }
                 _rawEvent += value;
@@ -124,30 +191,40 @@ namespace WacomMTDN
         private void WMTAttachCallbackInternal(WacomMTCapability deviceInfo, System.IntPtr userData)
         {
             //Add new device into the local list
-            AttachEvent(deviceInfo);
+            if(AttachEvent != null)
+                AttachEvent(deviceInfo);
         }
-
         private void WMTDetachCallbackInternal(int deviceID, System.IntPtr userData)
         {
             //Remove device from the local list
-            DetachEvent(deviceID);
+            if(DetachEvent != null)
+                DetachEvent(deviceID);
         }
         private int WMTFingerCallbackInternal(ref WacomMTFingerCollection fingerPacket, System.IntPtr userData)
         {
-            WacomMTFingerList list = new WacomMTFingerList(fingerPacket);
-            _fingerEvent(list);
+            if (_fingerEvent != null)
+            {
+                WacomMTFingerList list = new WacomMTFingerList(fingerPacket);
+                _fingerEvent(list);
+            }
             return 0;
         }
         private int WMTBlobCallbackInternal(ref WacomMTBlobAggregate blobPacket, System.IntPtr userData)
         {
-            WacomMTBlobAggregateList list = new WacomMTBlobAggregateList(blobPacket);
-            _blobEvent(list);
+            if (_blobEvent != null)
+            {
+                WacomMTBlobAggregateList list = new WacomMTBlobAggregateList(blobPacket);
+                _blobEvent(list);
+            }
             return 0;
         }
         private int WMTRawCallbackInternal(ref WacomMTRawData rawPacket, System.IntPtr userData)
         {
-            WacomMTRawDataList list = new WacomMTRawDataList(rawPacket);
-            _rawEvent(list);
+            if (_rawEvent != null)
+            {
+                WacomMTRawDataList list = new WacomMTRawDataList(rawPacket);
+                _rawEvent(list);
+            }
             return 0;
         }
 
@@ -188,8 +265,9 @@ namespace WacomMTDN
                         }
                     }
                 }
-                res = WacomMTFunc.WacomMTRegisterAttachCallback(WMTAttachCallbackInternal, IntPtr.Zero);
-                res = WacomMTFunc.WacomMTRegisterDetachCallback(WMTDetachCallbackInternal, IntPtr.Zero);
+
+                //res = WacomMTFunc.WacomMTRegisterAttachCallback(localAttachCallback, IntPtr.Zero);
+                res = WacomMTFunc.WacomMTRegisterDetachCallback(localDetachCallback, IntPtr.Zero);
             }
             return res;
         }
