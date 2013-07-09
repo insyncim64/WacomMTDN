@@ -9,6 +9,18 @@ namespace WacomMTDN
 {
     class WacomMTUtils
     {
+        public static bool IsHitRectEmpty(WacomMTHitRect hitRect)
+        {
+            if (hitRect.height == 0 && hitRect.width == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
         //Change a struct pointer to a list in C#
         public static List<T> MarshalPtrToStructArray<T>(IntPtr p, int count)
         {
